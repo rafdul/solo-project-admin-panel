@@ -1,0 +1,58 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    background: $background-color-grey;
+    font-family: $text-font;
+    font-size: 14px;
+    line-height: 1.7;
+    font-weight: $main-family;
+    color: $dark-color;
+  }
+  
+  .container {
+    max-width: 1056px;
+    margin: 0 18px 22px 18px;
+    padding: 0 18px 37px 18px;
+    color: $white-color;
+  }
+
+  .h1 {
+    font-family: $main-family;
+    font-size: 26px;
+    font-weight: $font-bold;
+    color: $paragraph-color; 
+    text-transform: uppercase;
+  }
+  
+  .h2 {
+    font-family: $main-family;
+    font-size: 16px;
+    font-weight: $font-semibold;
+    color: $paragraph-color;
+    text-transform: uppercase;
+  }
+  
+  .h3 {
+    font-family: $main-family;
+    font-size: 14px;
+    font-weight: $font-semibold;
+    color: $paragraph-color;
+    text-transform: uppercase;
+  }
+
+  .li {
+    font-family: $main-family;
+    font-size: 16px;
+    font-weight: $font-semibold;
+    color: $paragraph-color;
+  }
+
+  .a {
+    font-family: $main-family;
+    font-size: 16px;
+    font-weight: $font-normal;
+    color: $links-color;
+  }
