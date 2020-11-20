@@ -5,4 +5,70 @@
   grid-row-end: 1;
   background-color: $white-color;
   border-bottom: 1px solid $border-color;
+  border-right: 1px solid $border-color;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  align-content: center;
+
+  &__wallet {
+    padding-top: 15px;
+    width: 184px;
+    height: 100%;
+    text-align: center;
+    border-left: 1px solid $border-color;
+
+    &__content {
+      display: inline;
+      font-size: 19px;
+    }
+
+    img:nth-child(1) {
+      // padding-top: 0;
+      display: inline;
+      margin: 0 14px 8px 8px;
+    }
+
+    img:nth-child(3) {
+      // padding-top: 0;
+      display: inline;
+      margin-left: 18px;
+    }
+  }
+
+  &__notifications {
+    padding-top: 18px;
+    width: 60px;
+    height: 100%;
+    text-align: center;
+    border-left: 1px solid $border-color;
+  }
+
+  &__profile {
+    padding-top: 18px;
+    height: 100%;
+    width: 174px;
+    text-align: center;
+    border-left: 1px solid $border-color;
+
+    img {
+      display: inline;
+      margin-right: 7px;
+    }
+
+    p {
+      display: inline;
+      color: $user-color;
+      font-size: 13px;
+    }
+  }
+
+  &__exit {
+    padding-top: 17px;
+    width: 60px;
+    height: 100%;
+    text-align: center;
+    border-left: 1px solid $border-color;
+  }
 }
