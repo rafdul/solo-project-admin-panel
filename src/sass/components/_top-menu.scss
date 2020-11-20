@@ -22,6 +22,7 @@
     &__content {
       display: inline;
       font-size: 19px;
+      color: $paragraph-color;
     }
 
     img:nth-child(1) {
@@ -70,5 +71,9 @@
     height: 100%;
     text-align: center;
     border-left: 1px solid $border-color;
+  }
+
+  img {
+    filter: invert(50%);
   }
 }

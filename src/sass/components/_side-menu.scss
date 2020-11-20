@@ -43,17 +43,22 @@
       padding: 13px 0 0 20px;
       display: flex;
       justify-content: space-around;
+      // align-items: center;
     }
 
     img {
       flex: 1 1;
       margin-right: 15px;
+      filter: invert(50%);
     }
 
     p {
-      flex: 6 1;
+      flex: 6 2;
       text-align: left;
+      margin-top: -4px;
+      font-size: 14px;
     }
+
   }
 
   &__manager {
@@ -73,14 +78,14 @@
         margin-left: 15px;
         border-radius: 50%;
         flex: 1 1;
-        display: inline;
+        display: table-cell;
       }
 
       p {
         color: $user-color;
         flex: 3 1;
         padding-left: 12px;
-        display: inline;
+        display: table-cell;
       }
     }
 
@@ -99,6 +104,8 @@
 .hamburger {
   flex: 1 1;
 }
+
+
 
 .content {
   grid-column-start: 2;
