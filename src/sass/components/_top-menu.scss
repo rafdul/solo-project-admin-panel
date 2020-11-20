@@ -1,0 +1,8 @@
+.top-menu {
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 1;
+  background-color: $white-color;
+  border-bottom: 1px solid $border-color;
+}
