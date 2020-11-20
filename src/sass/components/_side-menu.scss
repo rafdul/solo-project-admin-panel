@@ -1,17 +1,17 @@
 .dashboard {
   display: grid;
-  grid-template-columns: 188px auto;
-  grid-template-rows: 60px 318px auto;
-  background-color: $grey-color;
-  height: 100%;
+  // grid-template-columns: 188px auto;
+  // grid-template-rows: 60px 318px auto;
+  grid-template: 60px 318px 80px auto / 188px auto;
+  // background-color: $grey-color;
+  height: 100vh;
 }
 
 .side-menu {
   grid-column-start: 1;
   grid-column-end: 1;
+  // position: fixed;
   background-color: $dark-color;
-  // grid-row-start: 3;
-  // grid-row-end: 3;
 
   &__header {
     display: flex;
@@ -35,28 +35,70 @@
     height: 318px;
     background-color: $dark-color;
     margin-bottom: 0;
+    padding: 0;
     list-style-type: none;
+
+    li {
+      height: 39px;
+      padding: 13px 0 0 20px;
+      display: flex;
+      justify-content: space-around;
+    }
+
+    img {
+      flex: 1 1;
+      margin-right: 15px;
+    }
+
+    p {
+      flex: 6 1;
+      text-align: left;
+    }
+
   }
 
   &__manager {
     grid-row-start: 3;
     grid-row-end: 3;
     background-color: $dark-color;
+    height: 100vh;
+    // display: flex;
+    // flex-wrap: nowrap;
 
-    p {
-      color: $user-color;
+    &__row {
+      // display: table-cell;
+
+      img {
+        height: 43px;
+        width: 43px;
+        margin-left: 15px;
+        border-radius: 50%;
+        flex: 1 1;
+        display: inline;
+      }
+
+      p {
+        color: $user-color;
+        flex: 3 1;
+        padding-left: 12px;
+        display: inline;
+      }
+    }
+
+    h2 {
+      flex: 1 1;
     }
   }
 }
 
 .logo {
-  flex: 3 1 auto;
+  flex: 3 1;
   height: 20px;
   color: $white-color;
 }
 
 .hamburger {
-  flex: 1 1 auto;
+  flex: 1 1;
 }
 
 
