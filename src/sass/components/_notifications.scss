@@ -1,0 +1,86 @@
+// notifications box
+
+
+// .top-menu::after {
+//   position: absolute;
+//   height: 39px;
+//   width: 100%;
+//   content: '';
+//   bottom: -50%;
+//   background-color: #96cc9b;
+//   // display: none;
+// }
+
+// notification box (green or red); teraz niewidoczne bo display=none
+.not-positive {
+  position: absolute;
+  height: 39px;
+  width: 100%;
+  content: '';
+  padding-top: 8px;
+  left: 0;
+  top: 60px;
+  background-color: #96cc9b;
+  display: flex;
+  display: none;
+
+  .not-box {
+    flex: 1 1;
+    color: $white-color;
+    text-align: right;
+    display: inline;
+  }
+
+  p {
+    display: inline-block;
+    margin-left: -3%;
+    color: $white-color;
+  }
+
+  img {
+    filter: invert(1);
+    margin-right: 19px;
+    margin-bottom: 2px;
+  }
+
+}
+
+.not-negative {
+  position: absolute;
+  height: 39px;
+  width: 100%;
+  content: '';
+  padding-top: 8px;
+  left: 0;
+  top: 60px;
+  background-color: #ec7171;
+  display: flex;
+  display: none;
+
+  .not-box-first {
+    flex: 2 1;
+    color: $white-color;
+    text-align: right;
+    display: inline;
+  }
+
+  .not-box-second {
+    flex: 1 1;
+    color: $white-color;
+    text-align: right;
+    display: inline;
+  }
+
+  p {
+    display: inline-block;
+    margin-left: -9px;
+    color: $white-color;
+  }
+
+  img {
+    filter: invert(1);
+    margin-right: 19px;
+    margin-bottom: 2px;
+  }
+
+}
