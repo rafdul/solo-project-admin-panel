@@ -154,3 +154,49 @@
   grid-row-start: 2;
   grid-row-end: 3;
 }
+
+@media (max-width: 500px) {
+  .dashboard {
+    grid-template: 60px 318px 80px auto / 54px auto;
+  }
+
+  .side-menu {
+    &__header {
+      img {
+        display: none;
+      }
+    }
+
+    &__links {
+      p {
+        display: none;
+      }
+    }
+
+    &__manager {
+      h2 {
+        display: none;
+      }
+
+      &__row {
+        .manager-image::after {
+          height: 9px;
+          width: 9px;
+          margin-left: -5px;
+          margin-top: 25px;
+        }
+
+        p {
+          display: none;
+        }
+
+        img {
+          height: 26px;
+          width: 26px;
+          margin-left: 13px;
+          margin-top: 25px;
+        }
+      }
+    }
+  }
+}
