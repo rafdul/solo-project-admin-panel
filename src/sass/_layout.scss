@@ -13,10 +13,12 @@ body {
 }
 
 .container {
-  max-width: 1056px;
-  margin: 0 18px 22px 18px;
+  max-width: 1140px;
+  height: 500px;
+  margin: 17px auto 22px auto;
   padding: 0 18px 37px 18px;
-  color: $white-color;
+  background-color: $white-color;
+  color: $more-grey-color;
 }
 
 h1 {

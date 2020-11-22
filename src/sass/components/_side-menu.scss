@@ -12,6 +12,9 @@
   grid-column-end: 1;
   // position: fixed;
   background-color: $very-dark-color;
+  position: fixed;
+  padding-top: 20px;
+  width: 188px;
 
   &__header {
     display: flex;
@@ -19,6 +22,7 @@
     grid-row-end: 1;
     background-color: $very-dark-color;
     height: 100%;
+    padding-bottom: 19px;
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
@@ -37,6 +41,7 @@
     margin-bottom: 0;
     padding: 0;
     list-style-type: none;
+    border-bottom: 1px solid $paragraph-color;
 
     li {
       height: 39px;
@@ -132,7 +137,7 @@
 
     h2 {
       flex: 1 1;
-      border-top: 1px solid $paragraph-color;
+      // border-top: 1px solid $paragraph-color;
       padding-top: 28px;
     }
   }
@@ -161,6 +166,8 @@
   }
 
   .side-menu {
+    width: 54px;
+
     &__header {
       img {
         display: none;

@@ -58,81 +58,85 @@
         </div>
       </div>
     </div>
-    <div class="top-menu">
-      <div class="not-positive">
-        <div class="not-box">
-          <img src="images/icons/positive.svg" alt="positive" title="positive_not" class="" width="15" height="15">
-          <p>Link is saved</p>
-        </div>
-        <div class="not-box">
-          <img src="images/icons/close.svg" alt="exit_not" title="close" class="" width="12" height="12">
-        </div>
-      </div>
-      <div class="not-negative">
-        <div class="not-box-first">
-          <img src="images/icons/negative.svg" alt="positive" title="positive_not" class="" width="15" height="15">
-          <p>Link is not saved because the line is buzy. Try again in 3 min.</p>
-        </div>
-        <div class="not-box-second">
-          <img src="images/icons/close.svg" alt="exit_not" title="close" class="" width="12" height="12">
-        </div>
-      </div>
-      <div class="top-menu__wallet">
-        <img src="images/icons/wallet.svg" alt="money" title="wallet" class="" width="17" height="17">
-        <div class="top-menu__wallet__content">$1,500,00</div>
-        <img src="images/icons/arrow-down-small.svg" alt="arrow_down" title="down" class="" width="11" height="7">
 
-        <div class="dropdown__wallet">
-          <div class="dropdown__wallet__main">
-            <img src="images/icons/wallet.svg" alt="money" title="wallet" class="" width="17" height="17">
-            <div class="top-menu__wallet__content wallet-summary">$1,500,00</div>
-            <img src="images/icons/arrow-up-small.svg" alt="arrow_down" title="down" class="" width="11" height="7">
+    <div class="menu">
+      <div id="menu" class="top-menu">
+        <div class="not-positive"> <!-- zielona belka z informacją, display=none  -->
+          <div class="not-box">
+            <img src="images/icons/positive.svg" alt="positive" title="positive_not" class="" width="15" height="15">
+            <p>Link is saved</p>
           </div>
-          <div class="dropdown__wallet__list">
-            <ul>
-              <li>
-                <p>CPA</p>
-                <p>$1000</p>
-              </li>
-              <li>
-                <p>CPL</p>
-                <p>$1100</p>
-              </li>
-              <li>
-                <p>Turnover</p>
-                <p>$1030</p>
-              </li>
-              <li>
-                <p>Net deposit</p>
-                <p>$1000</p>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-      </div>
-      <div class="top-menu__notifications dropdown">
-        <img src="images/icons/notification.svg" alt="exit" title="quit" class="" width="16" height="17">
-        <div class="dropdown__notif">
-          <div class="dropdown__notif__main">
-            <img src="images/icons/notification.svg" alt="exit" title="quit" class="" width="16" height="17">
+          <div class="not-box">
             <img src="images/icons/close.svg" alt="exit_not" title="close" class="" width="12" height="12">
           </div>
-          <div class="dropdown__notif__list">
-            <p>Lorem ipsum</p>
+        </div>
+        <div class="not-negative"> <!-- czerwona belka z informacją, display=none  -->
+          <div class="not-box-first">
+            <img src="images/icons/negative.svg" alt="positive" title="positive_not" class="" width="15" height="15">
+            <p>Link is not saved because the line is buzy. Try again in 3 min.</p>
+          </div>
+          <div class="not-box-second">
+            <img src="images/icons/close.svg" alt="exit_not" title="close" class="" width="12" height="12">
           </div>
         </div>
-      </div>
-      <div class="top-menu__profile">
-        <img src="images/icons/profile.svg" alt="exit" title="quit" class="" width="17" height="17">
-        <p>Leonardo DiCaprio</p>
-      </div>
-      <div class="top-menu__exit">
-        <img src="images/icons/quit.svg" alt="exit" title="quit" class="" width="19" height="15">
+        <div class="top-menu__wallet">
+          <img src="images/icons/wallet.svg" alt="money" title="wallet" class="" width="17" height="17">
+          <div class="top-menu__wallet__content">$1,500,00</div>
+          <img src="images/icons/arrow-down-small.svg" alt="arrow_down" title="down" class="" width="11" height="7">
+          <div class="dropdown__wallet"> <!-- box rozwijany po kliknięciu -->
+            <div class="dropdown__wallet__main">
+              <img src="images/icons/wallet.svg" alt="money" title="wallet" class="" width="17" height="17">
+              <div class="top-menu__wallet__content wallet-summary">$1,500,00</div>
+              <img src="images/icons/arrow-up-small.svg" alt="arrow_down" title="down" class="" width="11" height="7">
+            </div>
+            <div class="dropdown__wallet__list">
+              <ul>
+                <li>
+                  <p>CPA</p>
+                  <p>$1000</p>
+                </li>
+                <li>
+                  <p>CPL</p>
+                  <p>$1100</p>
+                </li>
+                <li>
+                  <p>Turnover</p>
+                  <p>$1030</p>
+                </li>
+                <li>
+                  <p>Net deposit</p>
+                  <p>$1000</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="top-menu__notifications dropdown">
+          <img src="images/icons/notification.svg" alt="exit" title="quit" class="" width="16" height="17">
+          <div class="dropdown__notif"> <!-- box rozwijany po kliknięciu -->
+            <div class="dropdown__notif__main">
+              <img src="images/icons/notification.svg" alt="exit" title="quit" class="" width="16" height="17">
+              <img src="images/icons/close.svg" alt="exit_not" title="close" class="" width="12" height="12">
+            </div>
+            <div class="dropdown__notif__list">
+              <p>Lorem ipsum</p>
+            </div>
+          </div>
+        </div>
+        <div class="top-menu__profile">
+          <img src="images/icons/profile.svg" alt="exit" title="quit" class="" width="17" height="17">
+          <p>Leonardo DiCaprio</p>
+        </div>
+        <div class="top-menu__exit">
+          <img src="images/icons/quit.svg" alt="exit" title="quit" class="" width="19" height="15">
+        </div>
       </div>
     </div>
 
-    <div class="content">Content</div>
+    <div class="content">
+      <div class="container">COŚŚŚŚŚŚŚŚ</div>
+      <div class="container">INNEGOOOOOO</div>
+    </div>
   </div>
 
 </body>
