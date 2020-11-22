@@ -1,0 +1,73 @@
+// dropdown in section wallet in top-menu
+
+.dropdown__wallet {
+  position: absolute;
+  // height: 138px;
+  width: 188px;
+  content: '';
+  background-color: $grey-color;
+  border: 1px solid $border-color;
+  box-shadow: 2px 4px 4px 4px $grey-color;
+  // display: block;
+  top: 0;
+  z-index: 1;
+  display: none;
+
+  &__main {
+    height: 60px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    // color: $very-dark-color;
+
+    img:nth-child(1) {
+      filter: invert(0%);
+      margin: 0 4px 8px 18px;
+    }
+
+    .wallet-summary {
+      color: $very-dark-color;
+    }
+
+    img:nth-child(3) {
+      cursor: pointer;
+      margin: 0 16px 0 8px;
+    }
+  }
+
+  &__list {
+    ul {
+      list-style-type: none;
+      line-height: 1;
+      margin: auto auto;
+
+      li {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 20px 0 -20px;
+      }
+
+      p {
+        font-size: 12px;
+        // line-height: 26px;
+      }
+
+      p:nth-child(1) {
+        color: $more-grey-color;
+      }
+
+      p:nth-child(2) {
+        color: $very-dark-color;
+      }
+    }
+  }
+}
+
+.top-menu__wallet:hover {
+  .dropdown__wallet {
+    display: block;
+  }
+}

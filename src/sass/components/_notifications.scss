@@ -84,15 +84,16 @@
   }
 }
 
-// dropdown box
+// dropdown notifications
 
-.dropdown__box {
+.dropdown__notif {
   position: absolute;
-  height: 138px;
-  width: 232px;
+  // height: 138px;
+  width: 234px;
   content: '';
   background-color: $grey-color;
-  // border: 1px solid black;
+  border: 1px solid $border-color;
+  box-shadow: 2px 4px 4px 4px $grey-color;
   // display: block;
   top: 0;
   z-index: 1;
@@ -148,7 +149,7 @@
 }
 
 .top-menu__notifications:hover {
-  .dropdown__box {
+  .dropdown__notif {
     display: block;
   }
 }
