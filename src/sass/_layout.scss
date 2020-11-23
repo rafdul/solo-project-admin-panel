@@ -13,12 +13,23 @@ body {
 }
 
 .container {
-  max-width: 1140px;
-  height: 500px;
+  max-width: 1056px;
+  // height: 500px;
   margin: 17px auto 22px auto;
-  padding: 0 18px 37px 18px;
+  padding: 0 0 37px 0;
   background-color: $white-color;
   color: $more-grey-color;
+  box-shadow: 1px 1px 8px 1px $more-grey-color;
+}
+
+hr {
+  color: $grey-color;
+}
+
+section {
+  // border-top: 1px solid $grey-color;
+  max-width: 1056px;
+  padding: 36px 188px;
 }
 
 h1 {
