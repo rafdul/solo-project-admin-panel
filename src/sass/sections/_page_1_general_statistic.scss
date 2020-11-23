@@ -6,4 +6,46 @@ h2 {
 
 .date-filter {
   text-align: center;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+
+  &::after {
+    box-sizing: content-box;
+  }
+
+  input {
+    border: 1px solid $more-grey-color;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-right: 0;
+    height: 40px;
+    width: 300px;
+    text-align: center;
+    color: $very-dark-color;
+  }
+
+  .calendar {
+    border: 1px solid $more-grey-color;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-left: 0;
+    height: 40px;
+
+    img {
+      filter: invert(50%);
+      text-align: center;
+      margin: 8px 12px 0 0;
+    }
+  }
+
+  .btn-data-filter {
+    width: 41px;
+    margin-left: 12px;
+    cursor: pointer;
+
+    img {
+      filter: invert(100%);
+    }
+  }
 }
