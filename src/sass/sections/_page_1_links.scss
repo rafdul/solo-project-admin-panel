@@ -1,0 +1,36 @@
+.btn-links {
+  color: $white-color;
+}
+
+.table-links {
+  margin: 20px auto 0 auto;
+  width: 100%;
+  border-collapse: separate;
+  text-align: justify;
+  border-top: 1px solid $grey-color;
+  border-collapse: collapse;
+
+  tr {
+    border-bottom: 1px solid $grey-color;
+    height: 60px;
+    display: flex;
+    align-items: center;
+  }
+
+  .title {
+    flex: 3 1;
+
+    h3 {
+      font-size: 16px;
+      margin-bottom: 0;
+    }
+  }
+
+  .url {
+    flex: 3.5 1;
+  }
+
+  .icons {
+    flex: 0.5 1;
+  }
+}
