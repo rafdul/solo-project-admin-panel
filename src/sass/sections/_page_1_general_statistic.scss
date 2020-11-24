@@ -49,3 +49,33 @@ h2 {
     }
   }
 }
+
+.table-statistic {
+  border-spacing: 10px;
+  margin: 0 auto;
+  width: 100%;
+  border-collapse: separate;
+
+  &__cell {
+    width: auto;
+    position: relative;
+    padding: 0;
+    border-bottom: 1px solid $grey-color;
+    border-right: 25px solid $white-color;
+    border-left: 25px solid $white-color;
+    text-align: justify;
+  }
+
+  h3, p {
+    display: inline;
+  }
+
+  p {
+    position: absolute;
+    right: 0;
+    margin: 0;
+    color: $very-dark-color;
+  }
+
+}
+

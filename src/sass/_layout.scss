@@ -30,6 +30,7 @@ section {
   // border-top: 1px solid $grey-color;
   max-width: 1056px;
   padding: 36px 188px;
+  text-align: center;
 }
 
 h1 {
@@ -54,7 +55,7 @@ h3 {
   font-size: 14px;
   font-weight: $font-semibold;
   color: $paragraph-color;
-  text-transform: uppercase;
+  // text-transform: uppercase;
 }
 
 li {
