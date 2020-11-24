@@ -113,10 +113,40 @@
   }
 }
 
-// @media (max-width: 500px) {
-//   .side-menu:hover {
-//     .top-menu {
-//       left: 188px;
-//     }
-//   }
-// }
+@media (max-width: 500px) {
+  .top-menu {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 4;
+    grid-row-end: 4;
+    flex-direction: column;
+    background-color: $very-dark-color;
+    // position: static;
+    border-bottom: 0;
+    width: 55px;
+
+    &__wallet {
+      .summary {
+        display: none;
+      }
+
+      img:nth-child(1) {
+        margin: 0;
+      }
+
+      img:nth-child(3) {
+        display: none;
+      }
+    }
+
+    &__profile {
+      p {
+        display: none;
+      }
+
+      img {
+        margin: 0;
+      }
+    }
+  }
+}
