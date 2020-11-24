@@ -9,12 +9,30 @@
   text-align: justify;
   border-top: 1px solid $grey-color;
   border-collapse: collapse;
+  margin-bottom: 25px;
 
   tr {
     border-bottom: 1px solid $grey-color;
     height: 60px;
     display: flex;
     align-items: center;
+
+    &:hover {
+      background-color: $grey-color;
+
+      .icons img {
+        display: inline;
+      }
+
+      img:nth-child(1) {
+        filter: invert(0.5);
+      }
+
+      img:nth-child(2){
+        filter: invert(0.5);
+        margin-left: 10px;
+      }
+    }
   }
 
   .title {
@@ -32,5 +50,10 @@
 
   .icons {
     flex: 0.5 1;
+
+    img {
+      display: none;
+      cursor: pointer;
+    }
   }
 }
