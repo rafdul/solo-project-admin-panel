@@ -22,16 +22,22 @@
 
       .icons img {
         display: inline;
-      }
-
-      img:nth-child(1) {
         filter: invert(0.5);
       }
 
-      img:nth-child(2){
-        filter: invert(0.5);
-        margin-left: 10px;
+      .icons-link {
+        visibility: visible;
+        // display: inline-flex;
       }
+
+      // img:nth-child(1) {
+      //   filter: invert(0.5);
+      // }
+
+      // img:nth-child(2){
+      //   filter: invert(0.5);
+      //   margin-left: 10px;
+      // }
     }
   }
 
@@ -49,11 +55,19 @@
   }
 
   .icons {
-    flex: 0.5 1;
+    flex: 0.7 1;
+
+    .icons-link {
+      display: inline;
+      visibility: hidden;
+      margin-right: 10px;
+      cursor: pointer;
+    }
 
     img {
       display: none;
       cursor: pointer;
+
     }
   }
 }
