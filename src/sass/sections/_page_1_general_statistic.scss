@@ -6,51 +6,38 @@
 }
 
 h2 {
-  // border-bottom: 1px solid $grey-color;
-  padding-left: 21px;
   padding-bottom: 0;
 }
 
 .date-filter {
-  text-align: center;
+  // text-align: center;
   display: flex;
-  flex-wrap: nowrap;
+  // flex-wrap: nowrap;
   justify-content: center;
 
   &::after {
     box-sizing: content-box;
   }
 
-  input {
-    border: 1px solid $more-grey-color;
-    border-top-left-radius: 3px;
-    border-bottom-left-radius: 3px;
-    border-right: 0;
-    height: 40px;
-    width: 300px;
-    text-align: center;
-    color: $very-dark-color;
-  }
+  .date-filter-wrapper {
+    position: relative;
 
-  .calendar {
-    border: 1px solid $more-grey-color;
-    border-top-right-radius: 3px;
-    border-bottom-right-radius: 3px;
-    border-left: 0;
-    height: 40px;
-
-    img {
-      filter: invert(50%);
+    input {
+      border: 1px solid $more-grey-color;
+      border-radius: 3px;
+      padding: 12px 60px;
       text-align: center;
-      margin: 8px 12px 0 0;
+      color: $very-dark-color;
     }
-  }
 
-  .btn-data-filter {
-    width: 41px;
-    margin-left: 12px;
+    .date-filter-img {
+      position: absolute;
+      right: 20%;
+      top: 25%;
+      filter: invert(50%);
+    }
 
-    img {
+    .btn-data-filter img {
       filter: invert(100%);
     }
   }
@@ -58,14 +45,14 @@ h2 {
 
 .table-statistic {
   border-spacing: 10px;
-  margin: 0 auto;
+  // margin: 0 auto;
   width: 100%;
-  border-collapse: separate;
+  // border-collapse: separate;
 
   &__cell {
-    width: auto;
+    // width: auto;
     position: relative;
-    padding: 0;
+    // padding: 0;
     border-bottom: 1px solid $grey-color;
     border-right: 25px solid $white-color;
     border-left: 25px solid $white-color;
