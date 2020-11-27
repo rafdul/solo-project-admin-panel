@@ -1,23 +1,19 @@
-.dashboard {
-  // display: grid;
-  // grid-template: 60px 318px 80px auto / 188px auto;
-  // height: 100vh;
-}
+// .dashboard {
+//   display: grid;
+//   grid-template: 60px 318px 80px auto / 188px auto;
+//   height: 100vh;
+// }
 
 .side-menu {
-  // grid-column-start: 1;
-  // grid-column-end: 1;
   background-color: $very-dark-color;
-  position: fixed;
+  // position: fixed;
   padding-top: 20px;
-  min-width: 12%;
+  // min-width: 12%;
   height: 100%;
-  z-index: 1;
+  // z-index: 1;
 
   &__header {
     display: flex;
-    // grid-row-start: 1;
-    // grid-row-end: 1;
     background-color: $very-dark-color;
     // height: 100%;
     padding-bottom: 19px;
@@ -32,8 +28,6 @@
   }
 
   .list {
-    // grid-row-start: 2;
-    // grid-row-end: 2;
     background-color: $very-dark-color;
     margin-bottom: 0;
     padding: 0;
@@ -88,8 +82,6 @@
   }
 
   &__manager {
-    // grid-row-start: 3;
-    // grid-row-end: 3;
     background-color: $very-dark-color;
 
     &__row {
@@ -135,13 +127,13 @@
 }
 
 .logo {
-  flex: 3 1;
+  flex: 3;
   height: 20px;
   color: $white-color;
 }
 
 .hamburger {
-  flex: 1 1;
+  flex: 1;
   cursor: pointer;
 }
 
@@ -152,108 +144,108 @@
 //   grid-row-end: 3;
 // }
 
-@media (max-width: 500px) {
-  .dashboard {
-    grid-template: 60px 318px 80px auto / 54px auto;
-  }
+// @media (max-width: 500px) {
+//   .dashboard {
+//     grid-template: 60px 318px 80px auto / 54px auto;
+//   }
 
-  .side-menu {
-    width: 54px;
+//   .side-menu {
+//     width: 54px;
 
-    &__header {
-      img {
-        display: none;
-      }
-    }
+//     &__header {
+//       img {
+//         display: none;
+//       }
+//     }
 
-    &__links {
-      p {
-        display: none;
-      }
-    }
+//     &__links {
+//       p {
+//         display: none;
+//       }
+//     }
 
-    &__manager {
-      h2 {
-        display: none;
-      }
+//     &__manager {
+//       h2 {
+//         display: none;
+//       }
 
-      &__row {
-        .manager-image::after {
-          height: 9px;
-          width: 9px;
-          margin-left: -5px;
-          margin-top: 25px;
-        }
+//       &__row {
+//         .manager-image::after {
+//           height: 9px;
+//           width: 9px;
+//           margin-left: -5px;
+//           margin-top: 25px;
+//         }
 
-        p {
-          display: none;
-        }
+//         p {
+//           display: none;
+//         }
 
-        img {
-          height: 26px;
-          width: 26px;
-          margin-left: 13px;
-          margin-top: 25px;
-        }
-      }
-    }
-  }
+//         img {
+//           height: 26px;
+//           width: 26px;
+//           margin-left: 13px;
+//           margin-top: 25px;
+//         }
+//       }
+//     }
+//   }
 
-  // wysuwane side-menu
-  .side-menu:hover {
-    width: 188px;
-    z-index: 2;
+//   // wysuwane side-menu
+//   .side-menu:hover {
+//     width: 188px;
+//     z-index: 2;
 
 
-    .hamburger {
-      color: $btn-color-orange;
-    }
+//     .hamburger {
+//       color: $btn-color-orange;
+//     }
 
-    .side-menu {
-      &__header {
-        width: 188px;
-        z-index: 2;
+//     .side-menu {
+//       &__header {
+//         width: 188px;
+//         z-index: 2;
 
-        img {
-          display: block;
-          width: 188px;
-          z-index: 2;
-        }
-      }
+//         img {
+//           display: block;
+//           width: 188px;
+//           z-index: 2;
+//         }
+//       }
 
-      &__links {
-        width: 188px;
+//       &__links {
+//         width: 188px;
 
-        p {
-          display: flex;
-        }
-      }
+//         p {
+//           display: flex;
+//         }
+//       }
 
-      &__manager{
-        width: 188px;
-        height: 200px;
+//       &__manager{
+//         width: 188px;
+//         height: 200px;
 
-        h2 {
-          display: flex;
-        }
+//         h2 {
+//           display: flex;
+//         }
 
-        .manager-image::after {
-          height: 11px;
-          width: 11px;
-          margin-left: -10px;
-        }
+//         .manager-image::after {
+//           height: 11px;
+//           width: 11px;
+//           margin-left: -10px;
+//         }
 
-        img {
-          height: 43px;
-          width: 43px;
-          margin-left: 15px;
-        }
+//         img {
+//           height: 43px;
+//           width: 43px;
+//           margin-left: 15px;
+//         }
 
-        p {
-          display: flex;
-          padding-top: 30px;
-        }
-      }
-    }
-  }
-}
+//         p {
+//           display: flex;
+//           padding-top: 30px;
+//         }
+//       }
+//     }
+//   }
+// }

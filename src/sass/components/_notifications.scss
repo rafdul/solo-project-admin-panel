@@ -25,7 +25,7 @@
   display: none;
 
   .not-box {
-    flex: 1 1;
+    flex: 1;
     color: $white-color;
     text-align: right;
     display: inline;
@@ -58,14 +58,14 @@
   display: none;
 
   .not-box-first {
-    flex: 2 1;
+    flex: 2;
     color: $white-color;
     text-align: right;
     display: inline;
   }
 
   .not-box-second {
-    flex: 1 1;
+    flex: 1;
     color: $white-color;
     text-align: right;
     display: inline;
@@ -96,6 +96,7 @@
   box-shadow: 1px 1px 8px 1px $more-grey-color;
   // display: block;
   top: 0;
+  right: 4.5%;
   z-index: 1;
   display: none;
 
@@ -154,9 +155,9 @@
   }
 }
 
-@media (max-width: 500px) {
-  .dropdown__notif {
-    width: 188px;
-  }
-}
+// @media (max-width: 500px) {
+//   .dropdown__notif {
+//     width: 188px;
+//   }
+// }
 

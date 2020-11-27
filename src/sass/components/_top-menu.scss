@@ -11,62 +11,65 @@
 //   // top: 0;
 //   left: 188px;
 //   width: 85.5%;
-//   grid-column-start: 2;
-//   grid-column-end: 2;
-//   grid-row-start: 1;
-//   grid-row-end: 1;
 //   background-color: $white-color;
 //   border-bottom: 1px solid $border-color;
 //   border-right: 1px solid $border-color;
 // }
 
 .top-menu {
-  // grid-column-start: 2;
-  // grid-column-end: 2;
-  // grid-row-start: 1;
-  // grid-row-end: 1;
   background-color: $white-color;
   border-bottom: 1px solid $border-color;
   border-right: 1px solid $border-color;
   display: flex;
-  flex-direction: row;
+  // flex-direction: row;
   justify-content: flex-end;
-  align-items: center;
-  align-content: center;
-  position: relative;
+  // align-items: center;
+  // align-content: center;
+  // position: relative;
 
   &__wallet {
-    padding-top: 15px;
-    width: 184px;
+    padding: 15px 0;
+    width: 16%;
     height: 60px;
     text-align: center;
     border-left: 1px solid $border-color;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-around;
 
-    &__content {
-      display: inline;
+    p {
       font-size: 19px;
       color: $paragraph-color;
     }
 
+    // &__content {
+    //   display: inline;
+    //   font-size: 19px;
+    //   color: $paragraph-color;
+    // }
+
     img:nth-child(1) {
-      // padding-top: 0;
-      display: inline;
-      margin: 0 14px 8px 8px;
+      padding: 1px;
+      // display: inline;
+      // margin-right: 18px;
     }
 
     img:nth-child(3) {
       // padding-top: 0;
-      display: inline;
-      margin-left: 18px;
+      // display: inline;
+      // margin-left: 18px;
     }
   }
 
   &__notifications {
-    padding-top: 18px;
-    width: 60px;
+    padding: 15px 0;
+    width: 6%;
     height: 60px;
     text-align: center;
     border-left: 1px solid $border-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   &__notifications::after {
@@ -74,38 +77,43 @@
     position: absolute;
     height: 8px;
     width: 8px;
-    margin-left: -8px;
-    margin-top: 2px;
-    margin-bottom: -4px;
+    margin-bottom: 8px;
+    margin-left: 6px;
     border-radius: 50%;
     background-color: $btn-color-orange;
   }
 
   &__profile {
-    padding-top: 18px;
+    padding: 15px 0;
     height: 60px;
-    width: 174px;
+    width: 15%;
     text-align: center;
     border-left: 1px solid $border-color;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-around;
 
     img {
-      display: inline;
-      margin-right: 7px;
+      // display: inline;
+      // margin-right: 7px;
     }
 
     p {
-      display: inline;
+      // display: inline;
       color: $user-color;
       font-size: 13px;
     }
   }
 
   &__exit {
-    padding-top: 17px;
-    width: 60px;
+    padding: 15px 0;
+    width: 6%;
     height: 60px;
     text-align: center;
     border-left: 1px solid $border-color;
+    align-items: center;
+    display: flex;
+    justify-content: center;
   }
 
   img {
@@ -113,40 +121,40 @@
   }
 }
 
-@media (max-width: 500px) {
-  .top-menu {
-    grid-column-start: 1;
-    grid-column-end: 1;
-    grid-row-start: 4;
-    grid-row-end: 4;
-    flex-direction: column;
-    background-color: $very-dark-color;
-    // position: static;
-    border-bottom: 0;
-    width: 55px;
+// @media (max-width: 500px) {
+//   .top-menu {
+//     grid-column-start: 1;
+//     grid-column-end: 1;
+//     grid-row-start: 4;
+//     grid-row-end: 4;
+//     flex-direction: column;
+//     background-color: $very-dark-color;
+//     // position: static;
+//     border-bottom: 0;
+//     width: 55px;
 
-    &__wallet {
-      .summary {
-        display: none;
-      }
+//     &__wallet {
+//       .summary {
+//         display: none;
+//       }
 
-      img:nth-child(1) {
-        margin: 0;
-      }
+//       img:nth-child(1) {
+//         margin: 0;
+//       }
 
-      img:nth-child(3) {
-        display: none;
-      }
-    }
+//       img:nth-child(3) {
+//         display: none;
+//       }
+//     }
 
-    &__profile {
-      p {
-        display: none;
-      }
+//     &__profile {
+//       p {
+//         display: none;
+//       }
 
-      img {
-        margin: 0;
-      }
-    }
-  }
-}
+//       img {
+//         margin: 0;
+//       }
+//     }
+//   }
+// }
