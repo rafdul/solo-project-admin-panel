@@ -1,22 +1,11 @@
-// .dashboard {
-//   display: grid;
-//   grid-template: 60px 318px 80px auto / 188px auto;
-//   height: 100vh;
-// }
-
 .side-menu {
   background-color: $very-dark-color;
-  // position: fixed;
-  padding-top: 20px;
-  // min-width: 12%;
   height: 100%;
-  // z-index: 1;
 
   &__header {
     display: flex;
     background-color: $very-dark-color;
-    // height: 100%;
-    padding-bottom: 19px;
+    padding: 20px 5px;
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
@@ -55,19 +44,6 @@
       }
     }
 
-    // .active {
-    //   background-color: $dark-color;
-    //   border-left: 4px solid $btn-color-orange;
-
-    //   p {
-    //     color: $white-color;
-    //   }
-
-    //   img {
-    //     filter: invert(100%);
-    //   }
-    // }
-
     img {
       flex: 0 0 25px;
       filter: invert(50%);
@@ -103,7 +79,6 @@
       }
 
       img {
-        // position: absolute;
         height: 43px;
         width: 43px;
         margin-left: 15px;
@@ -119,8 +94,6 @@
     }
 
     h2 {
-      // flex: 1 1;
-      // border-top: 1px solid $paragraph-color;
       padding: 15px 10px;
     }
   }
@@ -130,6 +103,7 @@
   flex: 3;
   height: 20px;
   color: $white-color;
+  padding-left: 10px;
 }
 
 .hamburger {
@@ -137,115 +111,89 @@
   cursor: pointer;
 }
 
-// .content {
-//   grid-column-start: 2;
-//   grid-column-end: 2;
-//   grid-row-start: 2;
-//   grid-row-end: 3;
-// }
+@media (max-width: 500px) {
+  .side-menu {
+    &__header {
+      img {
+        display: none;
+      }
+    }
 
-// @media (max-width: 500px) {
-//   .dashboard {
-//     grid-template: 60px 318px 80px auto / 54px auto;
-//   }
+    .list {
+      p {
+        display: none;
+      }
+    }
 
-//   .side-menu {
-//     width: 54px;
+    &__manager {
+      h2 {
+        display: none;
+      }
 
-//     &__header {
-//       img {
-//         display: none;
-//       }
-//     }
+      &__row {
+        .manager-image::after {
+          height: 9px;
+          width: 9px;
+          margin-left: -5px;
+          margin-top: 25px;
+        }
 
-//     &__links {
-//       p {
-//         display: none;
-//       }
-//     }
+        p {
+          display: none;
+        }
 
-//     &__manager {
-//       h2 {
-//         display: none;
-//       }
+        img {
+          height: 26px;
+          width: 26px;
+          margin-left: 13px;
+          margin-top: 25px;
+        }
+      }
+    }
+  }
 
-//       &__row {
-//         .manager-image::after {
-//           height: 9px;
-//           width: 9px;
-//           margin-left: -5px;
-//           margin-top: 25px;
-//         }
+  // wysuwane side-menu
+  .side-menu:hover {
+    .hamburger {
+      color: $btn-color-orange;
+    }
 
-//         p {
-//           display: none;
-//         }
+    .side-menu {
+      &__header {
+        img {
+          display: block;
+          // z-index: 2;
+        }
+      }
 
-//         img {
-//           height: 26px;
-//           width: 26px;
-//           margin-left: 13px;
-//           margin-top: 25px;
-//         }
-//       }
-//     }
-//   }
+      &__links {
+        p {
+          display: flex;
+        }
+      }
 
-//   // wysuwane side-menu
-//   .side-menu:hover {
-//     width: 188px;
-//     z-index: 2;
+      &__manager{
+        h2 {
+          display: flex;
+        }
 
+        .manager-image::after {
+          height: 11px;
+          width: 11px;
+          margin-left: -10px;
+        }
 
-//     .hamburger {
-//       color: $btn-color-orange;
-//     }
+        img {
+          height: 43px;
+          width: 43px;
+          margin-left: 15px;
+        }
 
-//     .side-menu {
-//       &__header {
-//         width: 188px;
-//         z-index: 2;
-
-//         img {
-//           display: block;
-//           width: 188px;
-//           z-index: 2;
-//         }
-//       }
-
-//       &__links {
-//         width: 188px;
-
-//         p {
-//           display: flex;
-//         }
-//       }
-
-//       &__manager{
-//         width: 188px;
-//         height: 200px;
-
-//         h2 {
-//           display: flex;
-//         }
-
-//         .manager-image::after {
-//           height: 11px;
-//           width: 11px;
-//           margin-left: -10px;
-//         }
-
-//         img {
-//           height: 43px;
-//           width: 43px;
-//           margin-left: 15px;
-//         }
-
-//         p {
-//           display: flex;
-//           padding-top: 30px;
-//         }
-//       }
-//     }
-//   }
-// }
+        p {
+          display: flex;
+          padding-top: 30px;
+        }
+      }
+    }
+  }
+}
