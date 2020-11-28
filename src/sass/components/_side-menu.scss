@@ -3,6 +3,10 @@
   height: 100%;
   z-index: 3;
 
+  .menu-fixed {
+    position: sticky;
+    top: 0;
+  }
 
   &__header {
     display: flex;
