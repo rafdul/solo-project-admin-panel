@@ -74,13 +74,9 @@
   }
 }
 
-// @media (max-width: 500px) {
-//   .content {
-//     grid-row-start: 1;
-//     grid-row-end: 3;
+@media (max-width: 500px) {
+  .content div:nth-child(1) {
+    margin-top: 10px;
+  }
+}
 
-//     .container:nth-child(1) {
-//       margin-top: 0;
-//     }
-//   }
-// }

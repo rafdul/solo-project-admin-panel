@@ -103,6 +103,10 @@
       padding: 15px 10px;
     }
   }
+
+  &__top-menu {
+    display: none;
+  }
 }
 
 .logo {
@@ -117,8 +121,11 @@
   cursor: pointer;
 }
 
+// wersja short side-menu
 @media (max-width: 500px) {
   .side-menu {
+    // min-height: 280px;
+
     &__header {
       img {
         display: none;
@@ -153,6 +160,17 @@
           width: 26px;
           margin-left: 13px;
           margin-top: 25px;
+        }
+      }
+    }
+
+    &__top-menu {
+      // visibility: visible;
+      display: block;
+
+      &--wallet {
+        img:nth-child(3) {
+          display: none;
         }
       }
     }
@@ -198,6 +216,18 @@
         p {
           display: flex;
           padding-top: 30px;
+        }
+      }
+
+      &__top-menu {
+        p {
+          display: block;
+        }
+      }
+
+      &__top-menu--wallet {
+        img:nth-child(3) {
+          display: block;
         }
       }
     }

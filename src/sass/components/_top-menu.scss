@@ -129,20 +129,33 @@
   }
 }
 
+@media (max-width: 500px) {
+  .top-menu {
+    display: none;
+  }
+}
+
+
 // @media (max-width: 500px) {
+//   .dashboard {
+//     grid-template-areas: 'menu menu main main main' 'header header main main main';
+//   }
+
 //   .top-menu {
-//     grid-column-start: 1;
-//     grid-column-end: 1;
-//     grid-row-start: 4;
-//     grid-row-end: 4;
 //     flex-direction: column;
 //     background-color: $very-dark-color;
-//     // position: static;
 //     border-bottom: 0;
+//     border-right: 0;
 //     width: 55px;
+//     z-index: 4;
+//     align-items: center;
+//     bottom: 0;
+//     position: absolute;
 
 //     &__wallet {
-//       .summary {
+//       border-left: 0;
+
+//       p {
 //         display: none;
 //       }
 
@@ -156,6 +169,8 @@
 //     }
 
 //     &__profile {
+//       border-left: 0;
+
 //       p {
 //         display: none;
 //       }
@@ -163,6 +178,14 @@
 //       img {
 //         margin: 0;
 //       }
+//     }
+
+//     &__notifications {
+//       border-left: 0;
+//     }
+
+//     &__exit {
+//       border-left: 0;
 //     }
 //   }
 // }
