@@ -1,6 +1,8 @@
 .side-menu {
   background-color: $very-dark-color;
   height: 100%;
+  z-index: 3;
+
 
   &__header {
     display: flex;

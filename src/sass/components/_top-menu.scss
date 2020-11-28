@@ -26,6 +26,9 @@
   // align-items: center;
   // align-content: center;
   // position: relative;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
 
   &__wallet {
     padding: 15px 0;
@@ -118,6 +121,11 @@
 
   img {
     filter: invert(50%);
+    cursor: pointer;
+
+    &:hover {
+      filter: invert(0);
+    }
   }
 }
 
