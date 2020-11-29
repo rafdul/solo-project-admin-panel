@@ -34,10 +34,6 @@
       color: $very-dark-color;
     }
 
-    // .wallet-summary {
-    //   color: $very-dark-color;
-    // }
-
     img:nth-child(3) {
       cursor: pointer;
       display: inline;
@@ -77,13 +73,3 @@
     display: block;
   }
 }
-
-// @media (max-width: 500px) {
-//   .dropdown__wallet {
-//     left: 0;
-//   }
-
-//   .wallet-summary {
-//     margin-right: 20px;
-//   }
-// }

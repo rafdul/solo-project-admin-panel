@@ -4,6 +4,7 @@
 @import 'normalize';
 @import 'layout';
 
+
 // components
 @import '../images/icon-font/css/Glypther.css';
 @import 'components/side-menu';
@@ -14,3 +15,6 @@
 //sections
 @import 'sections/_page_1_general_statistic';
 @import 'sections/_page_1_links';
+
+// mediaquery
+@import 'mediaquery';
