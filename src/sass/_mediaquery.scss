@@ -13,6 +13,10 @@
     margin-top: 10px;
   }
 
+  form:nth-child(1) {
+    margin-top: 10px;
+  }
+
   // wersja short side-menu
   .hamburger {
     visibility: visible;
@@ -22,6 +26,11 @@
     // min-height: 280px;
 
     &__header {
+      a {
+        display: none;
+        pointer-events: none;
+      }
+
       img {
         display: none;
       }
@@ -79,6 +88,11 @@
 
     .side-menu {
       &__header {
+        a {
+          display: block;
+          pointer-events: auto;
+        }
+
         img {
           display: block;
           // z-index: 2;
@@ -127,144 +141,4 @@
       }
     }
   }
-
 }
-
-
-// @media (max-width: 500px) {
-//   section {
-//     padding: 36px 20px;
-//   }
-
-// }
-
-// // ukrycie top-menu
-// @media (max-width: 500px) {
-//   .top-menu {
-//     display: none;
-//   }
-// }
-
-// @media (max-width: 500px) {
-//   .container:nth-child(1) {
-//     margin-top: 10px;
-//   }
-// }
-
-
-// // wersja short side-menu
-// @media (max-width: 500px) {
-//   .hamburger {
-//     visibility: visible;
-//   }
-
-//   .side-menu {
-//     // min-height: 280px;
-
-//     &__header {
-//       img {
-//         display: none;
-//       }
-//     }
-
-//     .list {
-//       p {
-//         display: none;
-//       }
-//     }
-
-//     &__manager {
-//       h2 {
-//         display: none;
-//       }
-
-//       &__row {
-//         .manager-image::after {
-//           height: 9px;
-//           width: 9px;
-//           margin-left: -5px;
-//           margin-top: 25px;
-//         }
-
-//         p {
-//           display: none;
-//         }
-
-//         img {
-//           height: 26px;
-//           width: 26px;
-//           margin-left: 13px;
-//           margin-top: 25px;
-//         }
-//       }
-//     }
-
-//     &__top-menu {
-//       // visibility: visible;
-//       display: block;
-
-//       &--wallet {
-//         img:nth-child(3) {
-//           display: none;
-//         }
-//       }
-//     }
-//   }
-
-//   // wysuwane side-menu
-//   .side-menu:hover {
-//     .hamburger {
-//       color: $btn-color-orange;
-//     }
-
-//     .side-menu {
-//       &__header {
-//         img {
-//           display: block;
-//           // z-index: 2;
-//         }
-//       }
-
-//       &__links {
-//         p {
-//           display: flex;
-//         }
-//       }
-
-//       &__manager{
-//         h2 {
-//           display: flex;
-//         }
-
-//         .manager-image::after {
-//           height: 11px;
-//           width: 11px;
-//           margin-left: -10px;
-//         }
-
-//         img {
-//           height: 43px;
-//           width: 43px;
-//           margin-left: 15px;
-//         }
-
-//         p {
-//           display: flex;
-//           padding-top: 30px;
-//         }
-//       }
-
-//       &__top-menu {
-//         p {
-//           display: block;
-//         }
-//       }
-
-//       &__top-menu--wallet {
-//         img:nth-child(3) {
-//           display: block;
-//         }
-//       }
-//     }
-//   }
-// }

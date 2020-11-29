@@ -43,6 +43,14 @@ body {
   box-shadow: 1px 1px 8px 1px $more-grey-color;
 }
 
+.container:nth-child(1) {
+  margin-top: 70px;
+}
+
+form:nth-child(1) {
+  margin-top: 70px;
+}
+
 hr {
   // color: $grey-color;
   border: 0.5px solid $grey-color;
@@ -103,7 +111,7 @@ img, i {
 }
 
 .btn {
-  padding: 11px 14px;
+  padding: 11px 20px;
   background-color: $btn-color-orange;
   color: $white-color;
   border-radius: 3px;
