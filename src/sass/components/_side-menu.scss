@@ -121,3 +121,14 @@
   cursor: pointer;
   visibility: hidden;
 }
+
+.menu-link {
+  font-size: 14px;
+  font-weight: 500;
+  color: $paragraph-color;
+  text-decoration: none;
+
+  &:hover {
+    color: $white-color;
+  }
+}
