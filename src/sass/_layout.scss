@@ -122,3 +122,19 @@ img, i {
     box-shadow: 1px 1px 8px 1px $more-grey-color;
   }
 }
+
+button {
+  border: none;
+}
+
+input:focus {
+  background-color: $grey-color;
+}
+
+input:valid {
+  outline-color: $access-color;
+}
+
+input:invalid {
+  outline-color: $alert-color;
+}
