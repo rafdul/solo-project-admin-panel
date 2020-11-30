@@ -30,4 +30,11 @@
   }
 }
 
+.error {
+  margin-top: 0;
+  color: $alert-color;
+}
 
+.invalid input {
+  border-color: $alert-color;
+}
