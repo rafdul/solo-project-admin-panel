@@ -18,8 +18,10 @@
   }
 
   // wersja short side-menu
-  .hamburger {
-    visibility: visible;
+  .min-grid {
+    .hamburger {
+      visibility: visible;
+    }
   }
 
   .side-menu {
@@ -81,7 +83,7 @@
   }
 
   // wysuwane side-menu
-  .side-menu:hover {
+  .side-menu {
     .hamburger {
       color: $btn-color-orange;
     }

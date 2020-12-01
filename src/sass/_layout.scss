@@ -5,9 +5,14 @@
 // grid
 .dashboard {
   display: grid;
-  grid-template-areas: 'menu menu header header header header' 'menu menu main main main main';
+  grid-template-areas: 'menu main';
+  grid-template-columns: 200px 1fr;
   // grid-gap: 10px;
   // padding: 10px;
+}
+
+.min-grid {
+  grid-template-columns: 60px 1fr !important;
 }
 
 .side-menu {

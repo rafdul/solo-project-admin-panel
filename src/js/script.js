@@ -2,7 +2,6 @@
 
 
 // datepicker
-
 $(function() {
   $('input[name="dates"]').daterangepicker({
     opens: 'left'
@@ -11,9 +10,35 @@ $(function() {
   });
 });
 
+// wysuwanie menu bocznego
+// sprawdzenie szerokości ekranu i nadanie nowej klasy (w określonej sytuacji)
+
+var mobileViewport = window.matchMedia('screen and (max-width: 500px)');
+
+mobileViewport.addEventListener('change', function(mq) {
+  if(mq.matches == true) {
+    if(document.querySelector('.dashboard').classList.contains('min-grid') == false) {
+      document.querySelector('.dashboard').classList.add('min-grid');
+    }
+  }
+});
+
+// console.log(document.querySelector('.dashboard'));
+// console.log(document.querySelector('.dashboard').style.getPropertyValue('grid-template-columns'));
+
+
+// nadanie nowej klasy poprzez klik w hamburger
+console.log(document.querySelector('.hamburger'));
+document.querySelector('.hamburger').addEventListener('click', function(event) {
+  event.preventDefault();
+  document.querySelector('.dashboard').classList.toggle('min-grid');
+  console.log(document.querySelector('.dashboard'));
+});
+
+
 
 // walidacja formularza po kliknięciu w submit
-console.log(document.querySelector('form'));
+// console.log(document.querySelector('form'));
 
 document.querySelector('form').addEventListener('submit', function(event) {
   var isFormValidate = true;

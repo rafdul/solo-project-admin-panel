@@ -120,7 +120,7 @@
 .hamburger {
   flex: 1;
   cursor: pointer;
-  visibility: hidden;
+  // visibility: hidden;
 }
 
 .menu-link {
@@ -131,5 +131,51 @@
 
   &:hover {
     color: $white-color;
+  }
+}
+
+// zwijanie menu po kliknięciu w hamburger
+.min-grid {
+  .side-menu {
+    &__header {
+      a {
+        display: none;
+        pointer-events: none;
+      }
+
+      img {
+        display: none;
+      }
+    }
+
+    .list {
+      p {
+        display: none;
+      }
+    }
+
+    &__manager {
+      h2 {
+        display: none;
+      }
+
+      &__row .manager-image::after {
+        height: 9px;
+        width: 9px;
+        margin-left: -5px;
+        margin-top: 25px;
+      }
+
+      &__row p {
+        display: none;
+      }
+
+      &__row img {
+        height: 26px;
+        width: 26px;
+        margin-left: 13px;
+        margin-top: 25px;
+      }
+    }
   }
 }
