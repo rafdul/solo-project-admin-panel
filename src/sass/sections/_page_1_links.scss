@@ -21,19 +21,22 @@
         filter: invert(0.5);
       }
 
+      img:hover {
+        filter: invert(0);
+        width: 18px;
+        height: 18px;
+      }
+
       .icons-link {
         visibility: visible;
         // display: inline-flex;
+
+        :hover {
+          width: 18px;
+          height: 18px;
+        }
+
       }
-
-      // img:nth-child(1) {
-      //   filter: invert(0.5);
-      // }
-
-      // img:nth-child(2){
-      //   filter: invert(0.5);
-      //   margin-left: 10px;
-      // }
     }
   }
 
@@ -63,7 +66,6 @@
     img {
       display: none;
       cursor: pointer;
-
     }
   }
 }

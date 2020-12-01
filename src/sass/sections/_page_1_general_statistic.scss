@@ -33,6 +33,10 @@
   }
 }
 
+.table-flex {
+  display: flex;
+}
+
 .table-statistic {
   border-spacing: 10px;
   // margin: 0 auto;
@@ -59,7 +63,6 @@
     margin: 0;
     color: $very-dark-color;
   }
-
 }
 
 .chart {
