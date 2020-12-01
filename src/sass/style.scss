@@ -11,11 +11,13 @@
 @import 'components/top-menu';
 @import 'components/notifications';
 @import 'components/wallet';
+@import 'components/date_picker';
 
 //sections
 @import 'sections/page_1_general_statistic';
 @import 'sections/page_1_links';
 @import 'sections/form';
+@import 'sections/payout';
 
 // mediaquery
 @import 'mediaquery';

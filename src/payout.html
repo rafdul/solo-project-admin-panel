@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Solo-project personal</title>
+  <title>Solo-project payout</title>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
@@ -153,91 +153,25 @@
     </div>
 
     <div class="content">
-      <form action="#" method="POST" class="form" novalidate>
-        <h2>Personal data</h2>
+      <div class="container">
+        <h2>Payout history</h2>
         <hr>
-        <section class="form--data">
-          <div>
-            <div class="field">
-              <label>Name</label>
-              <input type="text" name="user-name">
+        <section class="">
+          <section class="date-filter">
+            <div class="date-filter-wrapper">
+              <input type="text" name="dates" value="11/01/2020 - 11/15/2020">
+              <img src="images/icons/calendar.svg" alt="date" title="calendar" class="date-filter-img" width="15" height="15">
+              <a href="#" class="btn btn-data-filter">
+                <img src="images/icons/refresh.svg" alt="refresh" title="refreshing"  width="15" height="15">
+              </a>
             </div>
-            <p class="error"></p>
-          </div>
-          <div class="field">
-            <label>Surname</label>
-            <input type="text" name="user-surname">
-          </div>
-          <div>
-            <div class="field">
-              <label>E-mail</label>
-              <input type="email" name="user-email" placeholder="np.jan@kowalski.pl">
-              <!-- <input type="email" name="user-email" placeholder="np.jan@kowalski.pl" pattern="[a-zA-Z_0-9-.]{3,}@[a-zA-Z0-9-]{2,}[.]{1}[a-zA-Z]{2,}" required> -->
-            </div>
-            <p class="error"></p>
-          </div>
-          <div>
-            <div class="field">
-              <label>Phone number</label>
-              <input type="tel" name="user-phone" placeholder="np.600-123-456">
-              <!-- <input type="tel" name="user-phone" minlength="9" placeholder="np.600-123-456" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" maxlength="14"> -->
-            </div>
-            <p class="error"></p>
-          </div>
+          </section>
         </section>
         <hr>
-        <section class="form--social">
-          <div class="field">
-            <label>Skype</label>
-            <input type="text" name="user-skype">
-          </div>
-          <div class="field">
-            <label>ICQ</label>
-            <input type="text" name="user-icq">
-          </div>
-          <div class="field">
-            <label>Msn</label>
-            <input type="text" name="user-msn">
-          </div>
+        <section class="">
+
         </section>
-        <hr>
-        <section class="form--wallet">
-          <div class="field">
-            <label>Wallet</label>
-            <input type="number" name="user-wallet">
-          </div>
-        </section>
-        <hr>
-        <section class="form--password">
-          <div>
-            <div class="field">
-              <label>Password</label>
-              <input type="password" name="user-password" placeholder="Min. 5 znaków">
-            </div>
-            <p class="error"></p>
-          </div>
-          <div>
-            <div class="field">
-              <label>Repeat</label>
-              <input type="password" name="user-repeat" placeholder="Powtórz hasło">
-            </div>
-            <p class="error"></p>
-          </div>
-        </section>
-        <hr>
-        <section class="form--agreement">
-          <label>
-            <input type="checkbox" name="agreement">Nunc justo consequat lacus tellus
-            non eros cursus lectus feugiat pulvinar. Pellentesque ac eros mauris,
-            adipiscing elit. Curabitur adipiscing elit. In hac habitasse platea
-            dictumst. Vestibulum ante ipsum dolor sapien auctor non, porttitor risus.
-          </label>
-        </section>
-        <hr>
-        <section class="form--btn">
-          <button type="submit" class="btn btn-form">Save</button>
-        </section>
-      </form>
+      </div>
     </div>
   </div>
 

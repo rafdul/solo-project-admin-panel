@@ -1,37 +1,4 @@
-.date-filter {
-  // text-align: center;
-  display: flex;
-  // flex-wrap: nowrap;
-  justify-content: center;
-
-  &::after {
-    box-sizing: content-box;
-  }
-
-  .date-filter-wrapper {
-    position: relative;
-
-    input {
-      border: 1px solid $more-grey-color;
-      border-radius: 3px;
-      padding: 12px 60px;
-      text-align: center;
-      color: $very-dark-color;
-      min-width: 300px;
-    }
-
-    .date-filter-img {
-      position: absolute;
-      right: 20%;
-      top: 25%;
-      filter: invert(50%);
-    }
-
-    .btn-data-filter img {
-      filter: invert(100%);
-    }
-  }
-}
+// date picker w components/_date_picker.scss
 
 .table-flex {
   display: flex;
