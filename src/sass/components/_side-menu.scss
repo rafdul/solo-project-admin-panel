@@ -31,7 +31,7 @@
     border-bottom: 1px solid $paragraph-color;
 
     li {
-      padding: 13px 0 13px 20px;
+      padding: 13px 0 13px 15px;
       display: flex;
       cursor: pointer;
       align-items: center;
@@ -121,6 +121,10 @@
   flex: 1;
   cursor: pointer;
   // visibility: hidden;
+
+  &:hover {
+    color: $btn-color-orange;
+  }
 }
 
 .menu-link {
