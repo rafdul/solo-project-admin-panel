@@ -59,7 +59,7 @@
       // visibility: visible;
       display: block;
 
-      &--wallet img:nth-child(3) {
+      &--wallet img:nth-child(2) {
         display: none;
       }
     }
@@ -98,6 +98,17 @@
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 570px) {
+  .field {
+    flex-direction: column;
 
+    input {
+      min-height: 35px;
+    }
+  }
+
+  .form--agreement {
+    padding-left: 8%;
+    padding-right: 8%;
+  }
 }
