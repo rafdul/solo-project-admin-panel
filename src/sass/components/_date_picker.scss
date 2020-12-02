@@ -10,6 +10,7 @@
 
   .date-filter-wrapper {
     position: relative;
+    display: block;
 
     input {
       border: 1px solid $more-grey-color;
@@ -23,13 +24,17 @@
 
     .date-filter-img {
       position: absolute;
-      right: 20%;
-      top: 25%;
+      right: 22%;
+      top: 30%;
       filter: invert(50%);
     }
 
-    .btn-data-filter img {
-      filter: invert(100%);
+    .btn-data-filter {
+      margin-top: 3px;
+
+      img {
+        filter: invert(100%);
+      }
     }
   }
 }

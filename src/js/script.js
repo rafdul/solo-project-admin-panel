@@ -21,7 +21,7 @@ document.querySelector('.hamburger').addEventListener('click', function(event) {
 // wysuwanie menu bocznego
 // sprawdzenie szerokości ekranu i nadanie klasy min-grid (w określonej sytuacji)
 
-let mobileViewport = window.matchMedia('screen and (max-width: 500px)');
+let mobileViewport = window.matchMedia('screen and (max-width: 750px)');
 
 mobileViewport.addEventListener('change', function(mq) {
   if(mq.matches == true) {

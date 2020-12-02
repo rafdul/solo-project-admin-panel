@@ -1,4 +1,4 @@
-@media (max-width: 500px) {
+@media (max-width: 750px) {
   // zmniejszenie paddingu w sekcji
   section {
     padding: 36px 20px;
@@ -65,78 +65,39 @@
     }
   }
 
-  // zawartość top-menu w .side-menu
-  // .side-menu__top-menu {
-  //   p {
-  //     display: block;
-  //   }
-  // }
-
-  // .side-menu__top-menu--wallet {
-  //   img:nth-child(3) {
-  //     display: block;
-  //   }
-  // }
-
-  // wysuwane side-menu
-  // .side-menu {
-  //   .hamburger {
-  //     color: $btn-color-orange;
-  //   }
-
-  //   .side-menu__header {
-  //     img {
-  //       display: block;
-  //       // z-index: 2;
-  //     }
-  //   }
-
-  //   .side-menu__links {
-  //     p {
-  //       display: flex;
-  //     }
-  //   }
-
-  //   .side-menu__manager{
-  //     h2 {
-  //       display: flex;
-  //     }
-
-  //     .manager-image::after {
-  //       height: 11px;
-  //       width: 11px;
-  //       margin-left: -10px;
-
-  //       img {
-  //         height: 43px;
-  //         width: 43px;
-  //         margin-left: 15px;
-  //       }
-  //     }
-
-  //     p {
-  //       display: flex;
-  //       padding-top: 30px;
-  //     }
-  //   }
-
-  //   .side-menu__top-menu {
-  //     p {
-  //       display: block;
-  //     }
-  //   }
-
-  //   .side-menu__top-menu--wallet {
-  //     img:nth-child(3) {
-  //       display: block;
-  //     }
-  //   }
-  // }
-
   // tabelka w General statistic
   .table-flex {
     display: block;
-    padding-left: 18%;
-    padding-right: 18%;
+    padding-left: 5%;
+    padding-right: 5%;
   }
+}
+
+@media (max-width: 660px) {
+  .date-filter {
+    .date-filter-wrapper {
+      .date-filter-img {
+        display: none;
+      }
+
+      input {
+        min-width: 30px;
+        padding: 12px 5px;
+      }
+    }
+  }
+
+  .table-links {
+    tr {
+      flex-direction: column;
+
+      .title h3 {
+        margin: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+
 }
