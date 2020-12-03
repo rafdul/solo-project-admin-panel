@@ -1,6 +1,5 @@
 /* global $ */
 
-
 // datepicker
 $(function() {
   $('input[name="dates"]').daterangepicker({

@@ -21,10 +21,10 @@
         </div>
         <ul class="side-menu__links list">
           <li class="active">
-            <a href="index.html" class="menu-link">
+            <a href="#general" class="menu-link">
               <img src="images/icons/general.svg" alt="star" title="general" class="" width="16" height="15">
             </a>
-              <p><a href="index.html" class="menu-link">General</a></p>
+              <p><a href="#general" class="menu-link">General</a></p>
           </li>
           <li>
             <a href="#" class="menu-link">
@@ -45,16 +45,16 @@
             <p>Banners</p>
           </li>
           <li>
-            <a href="personal.html" class="menu-link">
+            <a href="#personal" class="menu-link">
               <img src="images/icons/personaldata.svg" alt="figure" title="personal_data" class="" width="9" height="13">
             </a>
-            <p><a href="personal.html" class="menu-link">Personal data</a></p>
+            <p><a href="#personal" class="menu-link">Personal data</a></p>
           </li>
           <li>
-            <a href="payout.html" class="menu-link">
+            <a href="#payout" class="menu-link">
               <img src="images/icons/payout.svg" alt="payment" title="payout" class="" width="13" height="13">
             </a>
-            <p><a href="payout.html" class="menu-link">Payout</a></p>
+            <p><a href="#payout" class="menu-link">Payout</a></p>
           </li>
           <li>
             <a href="#" class="menu-link">
@@ -174,232 +174,341 @@
       </div>
     </div>
 
-    <div class="content">
-      <div class="container">
-        <h2>General statistic</h2>
-        <hr>
-        <section class="date-filter">
-          <div class="date-filter-wrapper">
-            <input type="text" name="dates" value="11/01/2020 - 11/15/2020">
-            <img src="images/icons/calendar.svg" alt="date" title="calendar" class="date-filter-img" width="15" height="15">
-            <button href="#" class="btn btn-data-filter">
-              <img src="images/icons/refresh.svg" alt="refresh" title="refreshing"  width="15" height="15">
-            </button>
-          </div>
-        </section>
-        <hr>
-        <section class="table-flex">
-          <table class="table-statistic">
-            <tr>
-              <td class="table-statistic__cell">
-                <h3>Visit signups</h3>
-                <p>124</p>
-              </td>
-            </tr>
-            <tr>
-              <td class="table-statistic__cell">
-                <h3>FTD</h3>
-                <p>445</p>
-              </td>
-          </table>
-          <table class="table-statistic">
-            <tr>
-              <td class="table-statistic__cell">
-                <h3>Net deposit</h3>
-                <p>564</p>
-              </td>
-            </tr>
-            <tr>
-              <td class="table-statistic__cell">
-                <h3>Turn over</h3>
-                <p>432</p>
-              </td>
-            </tr>
-          </table>
-        </section>
-        <section class="chart">
-          <h3>Earnings chart</h3>
-          <!-- <img src="images/chart.png" alt="col_chart" title="chart"> -->
-          <img src="images/chart.png" alt="col_chart" title="chart" srcset="images/chart_big.png 1680, images/chart.png 680w, images/chart_small.png 280w">
-        </section>
-
-      </div>
-      <div class="container">
-        <h2>Links</h2>
-        <hr>
-        <section>
-          <div>
-            <a href="#" class="btn btn-links">+ add new</a>
-          </div>
-          <div>
-            <table class="table-links">
+    <div id=pages>
+      <div id="general" class="content">
+        <div class="container">
+          <h2>General statistic</h2>
+          <hr>
+          <section class="date-filter">
+            <div class="date-filter-wrapper">
+              <input type="text" name="dates" value="11/01/2020 - 11/15/2020">
+              <img src="images/icons/calendar.svg" alt="date" title="calendar" class="date-filter-img" width="15" height="15">
+              <button href="#" class="btn btn-data-filter">
+                <img src="images/icons/refresh.svg" alt="refresh" title="refreshing"  width="15" height="15">
+              </button>
+            </div>
+          </section>
+          <hr>
+          <section class="table-flex">
+            <table class="table-statistic">
               <tr>
-                <td class="title">
-                  <h3>Home page</h3>
-                </td>
-                <td class="url">
-                  <a href="#">http://www.homepage.com</a>
-                </td>
-                <td class="icons">
-                  <!-- <img src="images/icons/links.svg" alt="chain" title="links" class="" width="16" height="8"> -->
-                  <div class="icons-link">
-                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 18 10" style="enable-background:new 0 0 18 10;" xml:space="preserve" width="14" height="15" stroke="#f58220">
-                      <path d="M7,8H5C3.3,8,2,6.7,2,5s1.3-3,3-3h1V1H5C2.8,1,1,2.8,1,5s1.8,4,4,4h2c2.2,0,4-1.8,4-4h-1C10,6.7,8.7,8,7,8z M13,1h-2 C8.8,1,7,2.8,7,5h1c0-1.7,1.3-3,3-3h2c1.7,0,3,1.3,3,3s-1.3,3-3,3h-1v1h1c2.2,0,4-1.8,4-4S15.2,1,13,1z"/>
-                    </svg>
-                  </div>
-                  <img src="images/icons/trash.svg" alt="delete" title="trash" class="" width="14" height="15">
+                <td class="table-statistic__cell">
+                  <h3>Visit signups</h3>
+                  <p>124</p>
                 </td>
               </tr>
               <tr>
-                <td class="title">
-                  <h3>Currently offer</h3>
+                <td class="table-statistic__cell">
+                  <h3>FTD</h3>
+                  <p>445</p>
                 </td>
-                <td class="url">
-                  <a href="#">http://www.currently.com</a>
-                </td>
-                <td class="icons">
-                  <div class="icons-link">
-                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 18 10" style="enable-background:new 0 0 18 10;" xml:space="preserve" width="14" height="15" stroke="#f58220">
-                      <path d="M7,8H5C3.3,8,2,6.7,2,5s1.3-3,3-3h1V1H5C2.8,1,1,2.8,1,5s1.8,4,4,4h2c2.2,0,4-1.8,4-4h-1C10,6.7,8.7,8,7,8z M13,1h-2 C8.8,1,7,2.8,7,5h1c0-1.7,1.3-3,3-3h2c1.7,0,3,1.3,3,3s-1.3,3-3,3h-1v1h1c2.2,0,4-1.8,4-4S15.2,1,13,1z"/>
-                    </svg>
-                  </div>
-                  <img src="images/icons/trash.svg" alt="delete" title="trash" class="" width="14" height="15">
+            </table>
+            <table class="table-statistic">
+              <tr>
+                <td class="table-statistic__cell">
+                  <h3>Net deposit</h3>
+                  <p>564</p>
                 </td>
               </tr>
               <tr>
-                <td class="title">
-                  <h3>Blurpix</h3>
-                </td>
-                <td class="url">
-                  <a href="#">http://www.blurpix.com</a>
-                </td>
-                <td class="icons">
-                  <div class="icons-link">
-                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 18 10" style="enable-background:new 0 0 18 10;" xml:space="preserve" width="14" height="15" stroke="#f58220">
-                      <path d="M7,8H5C3.3,8,2,6.7,2,5s1.3-3,3-3h1V1H5C2.8,1,1,2.8,1,5s1.8,4,4,4h2c2.2,0,4-1.8,4-4h-1C10,6.7,8.7,8,7,8z M13,1h-2 C8.8,1,7,2.8,7,5h1c0-1.7,1.3-3,3-3h2c1.7,0,3,1.3,3,3s-1.3,3-3,3h-1v1h1c2.2,0,4-1.8,4-4S15.2,1,13,1z"/>
-                    </svg>
-                  </div>
-                  <img src="images/icons/trash.svg" alt="delete" title="trash" class="" width="14" height="15">
-                </td>
-              </tr>
-              <tr>
-                <td class="title">
-                  <h3>Your site</h3>
-                </td>
-                <td class="url">
-                  <a href="#">http://www.yoursite.com</a>
-                </td>
-                <td class="icons">
-                  <div class="icons-link">
-                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 18 10" style="enable-background:new 0 0 18 10;" xml:space="preserve" width="14" height="15" stroke="#f58220">
-                      <path d="M7,8H5C3.3,8,2,6.7,2,5s1.3-3,3-3h1V1H5C2.8,1,1,2.8,1,5s1.8,4,4,4h2c2.2,0,4-1.8,4-4h-1C10,6.7,8.7,8,7,8z M13,1h-2 C8.8,1,7,2.8,7,5h1c0-1.7,1.3-3,3-3h2c1.7,0,3,1.3,3,3s-1.3,3-3,3h-1v1h1c2.2,0,4-1.8,4-4S15.2,1,13,1z"/>
-                    </svg>
-                  </div>
-                  <img src="images/icons/trash.svg" alt="delete" title="trash" class="" width="14" height="15">
-                </td>
-              </tr>
-              <tr>
-                <td class="title">
-                  <h3>Google</h3>
-                </td>
-                <td class="url">
-                  <a href="#">http://www.google.com</a>
-                </td>
-                <td class="icons">
-                  <div class="icons-link">
-                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 18 10" style="enable-background:new 0 0 18 10;" xml:space="preserve" width="14" height="15" stroke="#f58220">
-                      <path d="M7,8H5C3.3,8,2,6.7,2,5s1.3-3,3-3h1V1H5C2.8,1,1,2.8,1,5s1.8,4,4,4h2c2.2,0,4-1.8,4-4h-1C10,6.7,8.7,8,7,8z M13,1h-2 C8.8,1,7,2.8,7,5h1c0-1.7,1.3-3,3-3h2c1.7,0,3,1.3,3,3s-1.3,3-3,3h-1v1h1c2.2,0,4-1.8,4-4S15.2,1,13,1z"/>
-                    </svg>
-                  </div>
-                  <img src="images/icons/trash.svg" alt="delete" title="trash" class="" width="14" height="15">
-                </td>
-              </tr>
-              <tr>
-                <td class="title">
-                  <h3>Facebook</h3>
-                </td>
-                <td class="url">
-                  <a href="#">http://www.facebook.com</a>
-                </td>
-                <td class="icons">
-                  <div class="icons-link">
-                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 18 10" style="enable-background:new 0 0 18 10;" xml:space="preserve" width="14" height="15" stroke="#f58220">
-                      <path d="M7,8H5C3.3,8,2,6.7,2,5s1.3-3,3-3h1V1H5C2.8,1,1,2.8,1,5s1.8,4,4,4h2c2.2,0,4-1.8,4-4h-1C10,6.7,8.7,8,7,8z M13,1h-2 C8.8,1,7,2.8,7,5h1c0-1.7,1.3-3,3-3h2c1.7,0,3,1.3,3,3s-1.3,3-3,3h-1v1h1c2.2,0,4-1.8,4-4S15.2,1,13,1z"/>
-                    </svg>
-                  </div>
-                  <img src="images/icons/trash.svg" alt="delete" title="trash" class="" width="14" height="15">
-                </td>
-              </tr>
-              <tr>
-                <td class="title">
-                  <h3>Dashoboard</h3>
-                </td>
-                <td class="url">
-                  <a href="#">http://www.dashboard.com</a>
-                </td>
-                <td class="icons">
-                  <div class="icons-link">
-                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 18 10" style="enable-background:new 0 0 18 10;" xml:space="preserve" width="14" height="15" stroke="#f58220">
-                      <path d="M7,8H5C3.3,8,2,6.7,2,5s1.3-3,3-3h1V1H5C2.8,1,1,2.8,1,5s1.8,4,4,4h2c2.2,0,4-1.8,4-4h-1C10,6.7,8.7,8,7,8z M13,1h-2 C8.8,1,7,2.8,7,5h1c0-1.7,1.3-3,3-3h2c1.7,0,3,1.3,3,3s-1.3,3-3,3h-1v1h1c2.2,0,4-1.8,4-4S15.2,1,13,1z"/>
-                    </svg>
-                  </div>
-                  <img src="images/icons/trash.svg" alt="delete" title="trash" class="" width="14" height="15">
-                </td>
-              </tr>
-              <tr>
-                <td class="title">
-                  <h3>Blurax</h3>
-                </td>
-                <td class="url">
-                  <a href="#">http://www.blurax.com</a>
-                </td>
-                <td class="icons">
-                  <div class="icons-link">
-                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 18 10" style="enable-background:new 0 0 18 10;" xml:space="preserve" width="14" height="15" stroke="#f58220">
-                      <path d="M7,8H5C3.3,8,2,6.7,2,5s1.3-3,3-3h1V1H5C2.8,1,1,2.8,1,5s1.8,4,4,4h2c2.2,0,4-1.8,4-4h-1C10,6.7,8.7,8,7,8z M13,1h-2 C8.8,1,7,2.8,7,5h1c0-1.7,1.3-3,3-3h2c1.7,0,3,1.3,3,3s-1.3,3-3,3h-1v1h1c2.2,0,4-1.8,4-4S15.2,1,13,1z"/>
-                    </svg>
-                  </div>
-                  <img src="images/icons/trash.svg" alt="delete" title="trash" class="" width="14" height="15">
-                </td>
-              </tr>
-              <tr>
-                <td class="title">
-                  <h3>Piece of wine</h3>
-                </td>
-                <td class="url">
-                  <a href="#">http://www.pieceofwine.com</a>
-                </td>
-                <td class="icons">
-                  <div class="icons-link">
-                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 18 10" style="enable-background:new 0 0 18 10;" xml:space="preserve" width="14" height="15" stroke="#f58220">
-                      <path d="M7,8H5C3.3,8,2,6.7,2,5s1.3-3,3-3h1V1H5C2.8,1,1,2.8,1,5s1.8,4,4,4h2c2.2,0,4-1.8,4-4h-1C10,6.7,8.7,8,7,8z M13,1h-2 C8.8,1,7,2.8,7,5h1c0-1.7,1.3-3,3-3h2c1.7,0,3,1.3,3,3s-1.3,3-3,3h-1v1h1c2.2,0,4-1.8,4-4S15.2,1,13,1z"/>
-                    </svg>
-                  </div>
-                  <img src="images/icons/trash.svg" alt="delete" title="trash" class="" width="14" height="15">
-                </td>
-              </tr>
-              <tr>
-                <td class="title">
-                  <h3>Twitter</h3>
-                </td>
-                <td class="url">
-                  <a href="#">http://www.twitter.com</a>
-                </td>
-                <td class="icons">
-                  <div class="icons-link">
-                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 18 10" style="enable-background:new 0 0 18 10;" xml:space="preserve" width="14" height="15" stroke="#f58220">
-                      <path d="M7,8H5C3.3,8,2,6.7,2,5s1.3-3,3-3h1V1H5C2.8,1,1,2.8,1,5s1.8,4,4,4h2c2.2,0,4-1.8,4-4h-1C10,6.7,8.7,8,7,8z M13,1h-2 C8.8,1,7,2.8,7,5h1c0-1.7,1.3-3,3-3h2c1.7,0,3,1.3,3,3s-1.3,3-3,3h-1v1h1c2.2,0,4-1.8,4-4S15.2,1,13,1z"/>
-                    </svg>
-                  </div>
-                  <img src="images/icons/trash.svg" alt="delete" title="trash" class="" width="14" height="15">
+                <td class="table-statistic__cell">
+                  <h3>Turn over</h3>
+                  <p>432</p>
                 </td>
               </tr>
             </table>
-          </div>
-          <div>
-            <a href="#" class="btn btn-links">+ add new</a>
-          </div>
-        </section>
+          </section>
+          <section class="chart">
+            <h3>Earnings chart</h3>
+            <!-- <img src="images/chart.png" alt="col_chart" title="chart"> -->
+            <img src="images/chart.png" alt="col_chart" title="chart" srcset="images/chart_big.png 1680, images/chart.png 680w, images/chart_small.png 280w">
+          </section>
+        </div>
+        <div class="container">
+          <h2>Links</h2>
+          <hr>
+          <section>
+            <div>
+              <a href="#" class="btn btn-links">+ add new</a>
+            </div>
+            <div>
+              <table class="table-links">
+                <tr>
+                  <td class="title">
+                    <h3>Home page</h3>
+                  </td>
+                  <td class="url">
+                    <a href="#">http://www.homepage.com</a>
+                  </td>
+                  <td class="icons">
+                    <!-- <img src="images/icons/links.svg" alt="chain" title="links" class="" width="16" height="8"> -->
+                    <div class="icons-link">
+                      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 18 10" style="enable-background:new 0 0 18 10;" xml:space="preserve" width="14" height="15" stroke="#f58220">
+                        <path d="M7,8H5C3.3,8,2,6.7,2,5s1.3-3,3-3h1V1H5C2.8,1,1,2.8,1,5s1.8,4,4,4h2c2.2,0,4-1.8,4-4h-1C10,6.7,8.7,8,7,8z M13,1h-2 C8.8,1,7,2.8,7,5h1c0-1.7,1.3-3,3-3h2c1.7,0,3,1.3,3,3s-1.3,3-3,3h-1v1h1c2.2,0,4-1.8,4-4S15.2,1,13,1z"/>
+                      </svg>
+                    </div>
+                    <img src="images/icons/trash.svg" alt="delete" title="trash" class="" width="14" height="15">
+                  </td>
+                </tr>
+                <tr>
+                  <td class="title">
+                    <h3>Currently offer</h3>
+                  </td>
+                  <td class="url">
+                    <a href="#">http://www.currently.com</a>
+                  </td>
+                  <td class="icons">
+                    <div class="icons-link">
+                      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 18 10" style="enable-background:new 0 0 18 10;" xml:space="preserve" width="14" height="15" stroke="#f58220">
+                        <path d="M7,8H5C3.3,8,2,6.7,2,5s1.3-3,3-3h1V1H5C2.8,1,1,2.8,1,5s1.8,4,4,4h2c2.2,0,4-1.8,4-4h-1C10,6.7,8.7,8,7,8z M13,1h-2 C8.8,1,7,2.8,7,5h1c0-1.7,1.3-3,3-3h2c1.7,0,3,1.3,3,3s-1.3,3-3,3h-1v1h1c2.2,0,4-1.8,4-4S15.2,1,13,1z"/>
+                      </svg>
+                    </div>
+                    <img src="images/icons/trash.svg" alt="delete" title="trash" class="" width="14" height="15">
+                  </td>
+                </tr>
+                <tr>
+                  <td class="title">
+                    <h3>Blurpix</h3>
+                  </td>
+                  <td class="url">
+                    <a href="#">http://www.blurpix.com</a>
+                  </td>
+                  <td class="icons">
+                    <div class="icons-link">
+                      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 18 10" style="enable-background:new 0 0 18 10;" xml:space="preserve" width="14" height="15" stroke="#f58220">
+                        <path d="M7,8H5C3.3,8,2,6.7,2,5s1.3-3,3-3h1V1H5C2.8,1,1,2.8,1,5s1.8,4,4,4h2c2.2,0,4-1.8,4-4h-1C10,6.7,8.7,8,7,8z M13,1h-2 C8.8,1,7,2.8,7,5h1c0-1.7,1.3-3,3-3h2c1.7,0,3,1.3,3,3s-1.3,3-3,3h-1v1h1c2.2,0,4-1.8,4-4S15.2,1,13,1z"/>
+                      </svg>
+                    </div>
+                    <img src="images/icons/trash.svg" alt="delete" title="trash" class="" width="14" height="15">
+                  </td>
+                </tr>
+                <tr>
+                  <td class="title">
+                    <h3>Your site</h3>
+                  </td>
+                  <td class="url">
+                    <a href="#">http://www.yoursite.com</a>
+                  </td>
+                  <td class="icons">
+                    <div class="icons-link">
+                      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 18 10" style="enable-background:new 0 0 18 10;" xml:space="preserve" width="14" height="15" stroke="#f58220">
+                        <path d="M7,8H5C3.3,8,2,6.7,2,5s1.3-3,3-3h1V1H5C2.8,1,1,2.8,1,5s1.8,4,4,4h2c2.2,0,4-1.8,4-4h-1C10,6.7,8.7,8,7,8z M13,1h-2 C8.8,1,7,2.8,7,5h1c0-1.7,1.3-3,3-3h2c1.7,0,3,1.3,3,3s-1.3,3-3,3h-1v1h1c2.2,0,4-1.8,4-4S15.2,1,13,1z"/>
+                      </svg>
+                    </div>
+                    <img src="images/icons/trash.svg" alt="delete" title="trash" class="" width="14" height="15">
+                  </td>
+                </tr>
+                <tr>
+                  <td class="title">
+                    <h3>Google</h3>
+                  </td>
+                  <td class="url">
+                    <a href="#">http://www.google.com</a>
+                  </td>
+                  <td class="icons">
+                    <div class="icons-link">
+                      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 18 10" style="enable-background:new 0 0 18 10;" xml:space="preserve" width="14" height="15" stroke="#f58220">
+                        <path d="M7,8H5C3.3,8,2,6.7,2,5s1.3-3,3-3h1V1H5C2.8,1,1,2.8,1,5s1.8,4,4,4h2c2.2,0,4-1.8,4-4h-1C10,6.7,8.7,8,7,8z M13,1h-2 C8.8,1,7,2.8,7,5h1c0-1.7,1.3-3,3-3h2c1.7,0,3,1.3,3,3s-1.3,3-3,3h-1v1h1c2.2,0,4-1.8,4-4S15.2,1,13,1z"/>
+                      </svg>
+                    </div>
+                    <img src="images/icons/trash.svg" alt="delete" title="trash" class="" width="14" height="15">
+                  </td>
+                </tr>
+                <tr>
+                  <td class="title">
+                    <h3>Facebook</h3>
+                  </td>
+                  <td class="url">
+                    <a href="#">http://www.facebook.com</a>
+                  </td>
+                  <td class="icons">
+                    <div class="icons-link">
+                      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 18 10" style="enable-background:new 0 0 18 10;" xml:space="preserve" width="14" height="15" stroke="#f58220">
+                        <path d="M7,8H5C3.3,8,2,6.7,2,5s1.3-3,3-3h1V1H5C2.8,1,1,2.8,1,5s1.8,4,4,4h2c2.2,0,4-1.8,4-4h-1C10,6.7,8.7,8,7,8z M13,1h-2 C8.8,1,7,2.8,7,5h1c0-1.7,1.3-3,3-3h2c1.7,0,3,1.3,3,3s-1.3,3-3,3h-1v1h1c2.2,0,4-1.8,4-4S15.2,1,13,1z"/>
+                      </svg>
+                    </div>
+                    <img src="images/icons/trash.svg" alt="delete" title="trash" class="" width="14" height="15">
+                  </td>
+                </tr>
+                <tr>
+                  <td class="title">
+                    <h3>Dashoboard</h3>
+                  </td>
+                  <td class="url">
+                    <a href="#">http://www.dashboard.com</a>
+                  </td>
+                  <td class="icons">
+                    <div class="icons-link">
+                      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 18 10" style="enable-background:new 0 0 18 10;" xml:space="preserve" width="14" height="15" stroke="#f58220">
+                        <path d="M7,8H5C3.3,8,2,6.7,2,5s1.3-3,3-3h1V1H5C2.8,1,1,2.8,1,5s1.8,4,4,4h2c2.2,0,4-1.8,4-4h-1C10,6.7,8.7,8,7,8z M13,1h-2 C8.8,1,7,2.8,7,5h1c0-1.7,1.3-3,3-3h2c1.7,0,3,1.3,3,3s-1.3,3-3,3h-1v1h1c2.2,0,4-1.8,4-4S15.2,1,13,1z"/>
+                      </svg>
+                    </div>
+                    <img src="images/icons/trash.svg" alt="delete" title="trash" class="" width="14" height="15">
+                  </td>
+                </tr>
+                <tr>
+                  <td class="title">
+                    <h3>Blurax</h3>
+                  </td>
+                  <td class="url">
+                    <a href="#">http://www.blurax.com</a>
+                  </td>
+                  <td class="icons">
+                    <div class="icons-link">
+                      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 18 10" style="enable-background:new 0 0 18 10;" xml:space="preserve" width="14" height="15" stroke="#f58220">
+                        <path d="M7,8H5C3.3,8,2,6.7,2,5s1.3-3,3-3h1V1H5C2.8,1,1,2.8,1,5s1.8,4,4,4h2c2.2,0,4-1.8,4-4h-1C10,6.7,8.7,8,7,8z M13,1h-2 C8.8,1,7,2.8,7,5h1c0-1.7,1.3-3,3-3h2c1.7,0,3,1.3,3,3s-1.3,3-3,3h-1v1h1c2.2,0,4-1.8,4-4S15.2,1,13,1z"/>
+                      </svg>
+                    </div>
+                    <img src="images/icons/trash.svg" alt="delete" title="trash" class="" width="14" height="15">
+                  </td>
+                </tr>
+                <tr>
+                  <td class="title">
+                    <h3>Piece of wine</h3>
+                  </td>
+                  <td class="url">
+                    <a href="#">http://www.pieceofwine.com</a>
+                  </td>
+                  <td class="icons">
+                    <div class="icons-link">
+                      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 18 10" style="enable-background:new 0 0 18 10;" xml:space="preserve" width="14" height="15" stroke="#f58220">
+                        <path d="M7,8H5C3.3,8,2,6.7,2,5s1.3-3,3-3h1V1H5C2.8,1,1,2.8,1,5s1.8,4,4,4h2c2.2,0,4-1.8,4-4h-1C10,6.7,8.7,8,7,8z M13,1h-2 C8.8,1,7,2.8,7,5h1c0-1.7,1.3-3,3-3h2c1.7,0,3,1.3,3,3s-1.3,3-3,3h-1v1h1c2.2,0,4-1.8,4-4S15.2,1,13,1z"/>
+                      </svg>
+                    </div>
+                    <img src="images/icons/trash.svg" alt="delete" title="trash" class="" width="14" height="15">
+                  </td>
+                </tr>
+                <tr>
+                  <td class="title">
+                    <h3>Twitter</h3>
+                  </td>
+                  <td class="url">
+                    <a href="#">http://www.twitter.com</a>
+                  </td>
+                  <td class="icons">
+                    <div class="icons-link">
+                      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 18 10" style="enable-background:new 0 0 18 10;" xml:space="preserve" width="14" height="15" stroke="#f58220">
+                        <path d="M7,8H5C3.3,8,2,6.7,2,5s1.3-3,3-3h1V1H5C2.8,1,1,2.8,1,5s1.8,4,4,4h2c2.2,0,4-1.8,4-4h-1C10,6.7,8.7,8,7,8z M13,1h-2 C8.8,1,7,2.8,7,5h1c0-1.7,1.3-3,3-3h2c1.7,0,3,1.3,3,3s-1.3,3-3,3h-1v1h1c2.2,0,4-1.8,4-4S15.2,1,13,1z"/>
+                      </svg>
+                    </div>
+                    <img src="images/icons/trash.svg" alt="delete" title="trash" class="" width="14" height="15">
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <div>
+              <a href="#" class="btn btn-links">+ add new</a>
+            </div>
+          </section>
+        </div>
+      </div>
+      <div id="personal" class="content">
+        <form action="#" method="POST" class="form" novalidate>
+          <h2>Personal data</h2>
+          <hr>
+          <section class="form--data">
+            <div>
+              <div class="field">
+                <label>Name</label>
+                <input type="text" name="user-name">
+              </div>
+              <p class="error"></p>
+            </div>
+            <div class="field">
+              <label>Surname</label>
+              <input type="text" name="user-surname">
+            </div>
+            <div>
+              <div class="field">
+                <label>E-mail</label>
+                <!-- <input type="email" name="user-email" placeholder="np.jan@kowalski.pl"> -->
+                <input type="email" name="user-email" placeholder="np.jan@kowalski.pl" pattern="[a-zA-Z_0-9-.]{3,}@[a-zA-Z0-9-]{2,}[.]{1}[a-zA-Z]{2,}" required>
+              </div>
+              <p class="error"></p>
+            </div>
+            <div>
+              <div class="field">
+                <label>Phone number</label>
+                <input type="tel" name="user-phone" placeholder="np.600-123-456">
+                <!-- <input type="tel" name="user-phone" minlength="9" placeholder="np.600-123-456" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" maxlength="14"> -->
+              </div>
+              <p class="error"></p>
+            </div>
+          </section>
+          <hr>
+          <section class="form--social">
+            <div class="field">
+              <label>Skype</label>
+              <input type="text" name="user-skype">
+            </div>
+            <div class="field">
+              <label>ICQ</label>
+              <input type="text" name="user-icq">
+            </div>
+            <div class="field">
+              <label>Msn</label>
+              <input type="text" name="user-msn">
+            </div>
+          </section>
+          <hr>
+          <section class="form--wallet">
+            <div class="field">
+              <label>Wallet</label>
+              <input type="number" name="user-wallet">
+            </div>
+          </section>
+          <hr>
+          <section class="form--password">
+            <div>
+              <div class="field">
+                <label>Password</label>
+                <input type="password" name="user-password" placeholder="Min. 5 znaków">
+              </div>
+              <p class="error"></p>
+            </div>
+            <div>
+              <div class="field">
+                <label>Repeat</label>
+                <input type="password" name="user-repeat" placeholder="Powtórz hasło">
+              </div>
+              <p class="error"></p>
+            </div>
+          </section>
+          <hr>
+          <section class="form--agreement">
+            <label>
+              <input type="checkbox" name="agreement">Nunc justo consequat lacus tellus
+              non eros cursus lectus feugiat pulvinar. Pellentesque ac eros mauris,
+              adipiscing elit. Curabitur adipiscing elit. In hac habitasse platea
+              dictumst. Vestibulum ante ipsum dolor sapien auctor non, porttitor risus.
+            </label>
+          </section>
+          <hr>
+          <section class="form--btn">
+            <button type="submit" class="btn btn-form">Save</button>
+          </section>
+        </form>
+      </div>
+      <div id="payout" class="content">
+        <div class="container">
+          <h2>Payout history</h2>
+          <hr>
+          <section class="">
+            <section class="date-filter">
+              <div class="date-filter-wrapper">
+                <input type="text" name="dates" value="11/01/2020 - 11/15/2020">
+                <img src="images/icons/calendar.svg" alt="date" title="calendar" class="date-filter-img" width="15" height="15">
+                <button href="#" class="btn btn-data-filter">
+                  <img src="images/icons/refresh.svg" alt="refresh" title="refreshing"  width="15" height="15">
+                </button>
+              </div>
+            </section>
+          </section>
+          <hr>
+          <section class="">
+
+          </section>
+        </div>
       </div>
     </div>
   </div>
@@ -408,5 +517,8 @@
   <script src="vendor/moment.min.js"></script>
   <script src="vendor/daterangepicker.js"></script>
   <script src="js/script.js" type="module"></script>
+  <script src="js/init-pages.js" type="module"></script>
+  <script src="js/form-validation.js" type="module"></script>
+
 </body>
 </html>

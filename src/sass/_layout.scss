@@ -143,3 +143,12 @@ input:valid {
 input:invalid {
   outline-color: $alert-color;
 }
+
+// aktywacja podstron w init-project.js
+#pages > * {
+  display: none;
+}
+
+#pages > .active {
+  display: block;
+}
