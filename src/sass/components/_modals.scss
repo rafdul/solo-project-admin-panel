@@ -58,6 +58,10 @@
   &__buttons {
     display: flex;
     justify-content: space-around;
+
+    button {
+      margin: 3px;
+    }
   }
 }
 

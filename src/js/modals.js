@@ -36,10 +36,14 @@ function openModal(modal) {
   document.querySelector(modal).classList.add('show');
 }
 
-// wywowałeni modala po kliknięcie w przycisk QUIT
-document.querySelector('.top-menu__exit img').addEventListener ('click', function(event) {
+// wywowałenie modala po kliknięcie w przycisk QUIT
+document.querySelector('.top-menu__exit').addEventListener ('click', function(event) {
   event.preventDefault;
-  console.log('klik wywowałenie modala', document.querySelector('.top-menu__exit img'));
+  openModal('#quit-modal');
+});
+
+document.querySelector('.side-menu__top-menu--exit').addEventListener ('click', function(event) {
+  event.preventDefault;
   openModal('#quit-modal');
 });
 

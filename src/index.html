@@ -27,22 +27,22 @@
               <p><a href="#general" class="menu-link">General</a></p>
           </li>
           <li>
-            <a href="#" class="menu-link">
+            <a href="#details" class="menu-link">
               <img src="images/icons/details.svg" alt="menu" title="details" class="" width="14" height="13">
             </a>
-              <p>Details</p>
+              <p><a href="#details" class="menu-link">Details</a></p>
           </li>
           <li>
-            <a href="#" class="menu-link">
+            <a href="#links" class="menu-link">
               <img src="images/icons/links.svg" alt="chain" title="links" class="" width="16" height="8">
             </a>
-            <p>Links</p>
+            <p><a href="#links" class="menu-link">Links</a></p>
           </li>
           <li>
-            <a href="#" class="menu-link">
+            <a href="#banners" class="menu-link">
               <img src="images/icons/banners.svg" alt="boxes" title="banners" class="" width="13" height="14">
             </a>
-            <p>Banners</p>
+            <p><a href="#banners" class="menu-link">Banners</a></p>
           </li>
           <li>
             <a href="#personal" class="menu-link">
@@ -57,10 +57,10 @@
             <p><a href="#payout" class="menu-link">Payout</a></p>
           </li>
           <li>
-            <a href="#" class="menu-link">
+            <a href="#postback" class="menu-link">
               <img src="images/icons/postback.svg" alt="postback" title="postback" class="" width="13" height="14">
             </a>
-            <p>Postback</p>
+            <p><a href="#postback" class="menu-link">Postback</a></p>
           </li>
         </ul>
         <div class="side-menu__manager">
@@ -74,26 +74,26 @@
         </div>
         <ul class="side-menu__top-menu list">
           <li class="side-menu__top-menu--wallet">
-            <a href="#" class="menu-link">
+            <a href="#" class="">
               <img src="images/icons/wallet.svg" alt="money" title="wallet" class="" width="17" height="17">
             </a>
             <p>$1,500,00</p>
             <img src="images/icons/arrow-down-small.svg" alt="arrow_down" title="down" class="" width="11" height="7">
           </li>
           <li class="side-menu__top-menu--notifications">
-            <a href="#" class="menu-link">
+            <a href="#" class="">
               <img src="images/icons/notification.svg" alt="exit" title="quit" class="" width="16" height="17">
             </a>
             <p>Notifications</p>
           </li>
           <li class="side-menu__top-menu--profile">
-            <a href="#" class="menu-link">
+            <a href="#" class="">
               <img src="images/icons/profile.svg" alt="exit" title="quit" class="backgr-icon" width="17" height="17">
             </a>
             <p>Leonardo Di Caprio</p>
           </li>
           <li class="side-menu__top-menu--exit">
-            <a href="#" class="menu-link">
+            <a href="#" class="">
               <img src="images/icons/quit.svg" alt="exit" title="quit" class="" width="19" height="15">
             </a>
             <p>Exit</p>
@@ -402,6 +402,33 @@
           </section>
         </div>
       </div>
+      <div id="details" class="content">
+        <div class="container">
+          <h2>Details</h2>
+          <hr>
+          <section>
+            <p>Strona w trakcie budowy</p>
+          </section>
+        </div>
+      </div>
+      <div id="links" class="content">
+        <div class="container">
+          <h2>Links</h2>
+          <hr>
+          <section>
+            <p>Strona w trakcie budowy</p>
+          </section>
+        </div>
+      </div>
+      <div id="banners" class="content">
+        <div class="container">
+          <h2>Banners</h2>
+          <hr>
+          <section>
+            <p>Strona w trakcie budowy</p>
+          </section>
+        </div>
+      </div>
       <div id="personal" class="content">
         <form action="#" method="POST" class="form" novalidate>
           <h2>Personal data</h2>
@@ -493,20 +520,28 @@
         <div class="container">
           <h2>Payout history</h2>
           <hr>
-          <section class="">
-            <section class="date-filter">
-              <div class="date-filter-wrapper">
-                <input type="text" name="dates" value="11/01/2020 - 11/15/2020">
-                <img src="images/icons/calendar.svg" alt="date" title="calendar" class="date-filter-img" width="15" height="15">
-                <button href="#" class="btn btn-data-filter">
-                  <img src="images/icons/refresh.svg" alt="refresh" title="refreshing"  width="15" height="15">
-                </button>
-              </div>
-            </section>
+          <section class="date-filter">
+            <div class="date-filter-wrapper">
+              <input type="text" name="dates" value="11/01/2020 - 11/15/2020">
+              <img src="images/icons/calendar.svg" alt="date" title="calendar" class="date-filter-img" width="15" height="15">
+              <button href="#" class="btn btn-data-filter">
+                <img src="images/icons/refresh.svg" alt="refresh" title="refreshing"  width="15" height="15">
+              </button>
+            </div>
+          </section>
           </section>
           <hr>
           <section class="">
 
+          </section>
+        </div>
+      </div>
+      <div id="postback" class="content">
+        <div class="container">
+          <h2>Postback</h2>
+          <hr>
+          <section>
+            <p>Strona w trakcie budowy</p>
           </section>
         </div>
       </div>
@@ -529,6 +564,7 @@
   <script src="vendor/moment.min.js"></script>
   <script src="vendor/daterangepicker.js"></script>
   <script src="js/script.js" type="module"></script>
+  <script src="js/side-menu-hide-show.js" type="module"></script>
   <script src="js/init-pages.js" type="module"></script>
   <script src="js/form-validation.js" type="module"></script>
   <script src="js/modals.js" type="module"></script>
