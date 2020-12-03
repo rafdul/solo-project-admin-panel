@@ -17,53 +17,26 @@
     margin-top: 10px;
   }
 
-  // wersja short side-menu
-  .min-grid {
-    // .hamburger {
-    //   visibility: visible;
-    // }
+  .side-menu__top-menu {
+    // visibility: visible;
+    display: block;
 
-    // .side-menu__header {
-    //   img {
-    //     display: none;
-    //   }
-    // }
-
-    // .side-menu__manager {
-    //   h2 {
-    //     display: none;
-    //   }
-
-    //   &__row {
-    //     .manager-image::after {
-    //       height: 9px;
-    //       width: 9px;
-    //       margin-left: -5px;
-    //       margin-top: 25px;
-    //     }
-
-    //     p {
-    //       display: none;
-    //     }
-
-    //     img {
-    //       height: 26px;
-    //       width: 26px;
-    //       margin-left: 13px;
-    //       margin-top: 25px;
-    //     }
-    //   }
-    // }
-
-    .side-menu__top-menu {
-      // visibility: visible;
-      display: block;
-
-      &--wallet img:nth-child(2) {
-        display: none;
-      }
+    &--wallet img:nth-child(2) {
+      display: none;
     }
   }
+
+  // wersja short side-menu
+  // .min-grid {
+  //   .side-menu__top-menu {
+  //     // visibility: visible;
+  //     display: block;
+
+  //     &--wallet img:nth-child(2) {
+  //       display: none;
+  //     }
+  //   }
+  // }
 
   // tabelka w General statistic
   .table-flex {

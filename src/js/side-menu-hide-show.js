@@ -6,7 +6,7 @@ document.querySelector('.hamburger').addEventListener('click', function(event) {
   console.log(document.querySelector('.dashboard'));
 });
 
-// wysuwanie menu bocznego
+// wysuwanie / chowanie menu bocznego podczas zmiany szerokości okna
 // sprawdzenie szerokości ekranu i nadanie klasy min-grid (w określonej sytuacji)
 
 let mobileViewport = window.matchMedia('screen and (max-width: 750px)');
@@ -39,3 +39,28 @@ function changeDisplay() {
   console.log(element.style.display);
 }
 
+// uruchamianie min-grid przy odświeżaniu strony poniżej szerokości 750px
+// korzystam z window.innerWidth (sprawdza szerokość okna przeglądarki)
+
+// function addMinGrid(el) {
+//   console.log(el.matches);
+//   if (el.matches) { // If media query matches
+//     document.querySelector('.dashboard').classList.add('min-grid');
+//     document.querySelector('.side-menu__top-menu').style.display = 'block';
+//   } else {
+//     document.querySelector('.dashboard').classList.remove('min-grid');
+//   //   document.querySelector('.side-menu__top-menu').style.display = 'none';
+//   }
+// }
+
+// let minGrid = window.matchMedia('(max-width: 750px)');
+// addMinGrid(minGrid); // Call listener function at run time
+// console.log('addMinGrid');
+
+console.log('window.innerWidth:', window.innerWidth);
+if (window.innerWidth <= 750) {
+  document.querySelector('.dashboard').classList.add('min-grid');
+  document.querySelector('.side-menu__top-menu').style.display = 'block';
+} else {
+  document.querySelector('.dashboard').classList.remove('min-grid');
+}
