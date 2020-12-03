@@ -11,15 +11,18 @@
   overflow: auto;
   padding: 30px;
   display: none;
-  // opacity: 0.8;
 
-  .show {
-    display: flex;
-  }
+  // .show {
+  //   display: flex;
+  // }
 
   ::-webkit-scrollbar{
     display: none;
   }
+}
+
+.overlay.show {
+  display: flex;
 }
 
 .modal {
@@ -31,9 +34,9 @@
   border-radius: 5px;
   display: none;
 
-  .show {
-    display: flex;
-  }
+  // .show {
+  //   display: block;
+  // }
 
   h4 {
     color: $very-dark-color;
@@ -44,11 +47,21 @@
     top: 0;
     right: 0;
     padding: 5px 10px;
+    cursor: pointer;
+
+    &:hover {
+      font-weight: 700;
+      color: #C73323;
+    }
   }
 
   &__buttons {
     display: flex;
     justify-content: space-around;
   }
+}
+
+.modal.show {
+  display: block;
 }
 
