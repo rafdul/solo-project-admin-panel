@@ -126,6 +126,14 @@ img, i {
     // color: $more-grey-color;
     box-shadow: 1px 1px 8px 1px $more-grey-color;
   }
+
+  &--cancel {
+    background-color: $more-grey-color;
+  }
+
+  &--quit {
+    background-color: #C73323;
+  }
 }
 
 button {
