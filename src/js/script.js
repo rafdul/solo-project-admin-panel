@@ -36,8 +36,21 @@ var chart = new Chart(ctx, {
       hidden: true,
     }]
   },
+  options: {
+    legend: {
+      display: true,
+      position: 'top',
+    },
+    maintainAspectRatio: false,
+  }
 });
 console.log(chart);
+console.log(chart.config);
+console.log(chart.config.type);
 
+if (window.innerWidth <= 400) {
+  chart.config.type = 'horizontalBar';
+  console.log(chart.config.type);
+}
 
 
