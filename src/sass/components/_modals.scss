@@ -30,7 +30,7 @@
   margin: auto;
   background-color: #ffffff;
   position: relative;
-  padding: 30px;
+  padding: 10px 35px;
   border-radius: 5px;
   display: none;
 
@@ -40,6 +40,7 @@
 
   h4 {
     color: $very-dark-color;
+    margin-bottom: 5px;
   }
 
   .btn-close {
@@ -62,10 +63,37 @@
     button {
       margin: 3px;
     }
+
+    .btn--quit {
+      width: 83px;
+    }
   }
 }
 
 .modal.show {
   display: block;
+}
+
+.modal-wrapper {
+  text-align: center;
+
+  input {
+    height: 35px;
+    margin: 5px;
+    border: 1px solid $more-grey-color;
+    border-radius: 5px;
+    padding-left: 25px;
+  }
+}
+
+.icon-input {
+  position: relative;
+
+  i {
+    position: absolute;
+    z-index: 4;
+    top: 33%;
+    left: 5%;
+  }
 }
 

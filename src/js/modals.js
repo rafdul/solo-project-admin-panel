@@ -47,3 +47,8 @@ document.querySelector('.side-menu__top-menu--exit').addEventListener ('click', 
   openModal('#quit-modal');
 });
 
+// wywołanie modala po kliknięciu w przycisk login/profile
+document.querySelector('.top-menu__profile').addEventListener ('click', function(event) {
+  event.preventDefault;
+  openModal('#login-modal');
+});
