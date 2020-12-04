@@ -4,11 +4,11 @@ const page = {
     const thisPage = this;
     thisPage.pages = document.querySelector('#pages').children;
     thisPage.navLinks = document.querySelectorAll('.menu-link');
-    console.log(thisPage.pages);
-    console.log( thisPage.navLinks);
+    // console.log(thisPage.pages);
+    // console.log( thisPage.navLinks);
 
     const idFromHash = window.location.hash.replace('#/', '');
-    console.log(idFromHash);
+    // console.log(idFromHash);
 
     let pageMatchingHash = thisPage.pages[0].id;
 
@@ -25,7 +25,7 @@ const page = {
       link.addEventListener('click', function(event){
         const clickedElement = this;
         event.preventDefault();
-        console.log(this);
+        // console.log(this);
 
         // get page id from href attribute
         const id = clickedElement.getAttribute('href').replace('#', '');
@@ -51,7 +51,7 @@ const page = {
     for(let link of thisPage.navLinks){
       link.classList.toggle('active', link.getAttribute('href') == '#' + pageId);
     }
-    console.log(thisPage.navLinks);
+    // console.log(thisPage.navLinks);
   },
 
   init: function() {

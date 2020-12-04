@@ -1,5 +1,5 @@
 // nadanie klasy min-grid poprzez klik w hamburger
-console.log(document.querySelector('.hamburger'));
+// console.log(document.querySelector('.hamburger'));
 document.querySelector('.hamburger').addEventListener('click', function(event) {
   event.preventDefault();
   document.querySelector('.dashboard').classList.toggle('min-grid');
@@ -30,13 +30,13 @@ mobileViewport.addEventListener('change', function(mq) {
 // zmiana z display none na block dla elementów top-menu w side-menu
 function changeDisplay() {
   const element = document.querySelector('.side-menu__top-menu');
-  console.log(element.style.display);
+  // console.log(element.style.display);
   if(element.style.display == 'none' || element.style.display == '') {
     element.style.display = 'block';
   } else if (element.style.display == 'block') {
     element.style.display = 'none';
   }
-  console.log(element.style.display);
+  // console.log(element.style.display);
 }
 
 // uruchamianie min-grid przy odświeżaniu strony poniżej szerokości 750px
@@ -57,7 +57,7 @@ function changeDisplay() {
 // addMinGrid(minGrid); // Call listener function at run time
 // console.log('addMinGrid');
 
-console.log('window.innerWidth:', window.innerWidth);
+// console.log('window.innerWidth:', window.innerWidth);
 if (window.innerWidth <= 750) {
   document.querySelector('.dashboard').classList.add('min-grid');
   document.querySelector('.side-menu__top-menu').style.display = 'block';
