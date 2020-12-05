@@ -8,6 +8,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -537,7 +538,7 @@
           </section>
           <hr>
           <section class="tabble-wrapper">
-            <table class="table-main table-payout">
+            <table id="table-payout" class="table-main table-payout">
               <thead>
                 <tr>
                   <th>Date</th>
@@ -674,6 +675,7 @@
   <script src="vendor/moment.min.js"></script>
   <script src="vendor/daterangepicker.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+  <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
   <script src="js/script.js" type="module"></script>
   <script src="js/chart.js" type="module"></script>
   <script src="js/side-menu-hide-show.js" type="module"></script>

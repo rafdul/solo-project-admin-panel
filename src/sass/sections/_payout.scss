@@ -1,6 +1,6 @@
 .tabble-wrapper {
-  padding-right: 3%;
-  padding-left: 3%;
+  padding-right: 0;
+  padding-left: 0;
 }
 
 .table-payout {
@@ -9,7 +9,40 @@
     margin: 16px 0;
   }
 
+  tr {
+
+  }
+
   td {
     font-size: 13px;
   }
+}
+
+// stylowanie plugina dataTable
+.dataTables {
+  &_wrapper {
+    padding: 0 10px;
+  }
+
+  &_length {
+    padding-bottom: 15px;
+  }
+
+  &_filter {
+    padding-bottom: 15px;
+  }
+}
+
+table.dataTable {
+  box-sizing: border-box;
+}
+
+table.dataTable thead th {
+  border-bottom: none;
+  flex: 1;
+  width: 90%;
+}
+
+table.dataTable.no-footer {
+  border-bottom: none;
 }
