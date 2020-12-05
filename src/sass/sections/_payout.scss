@@ -1,0 +1,15 @@
+.tabble-wrapper {
+  padding-right: 3%;
+  padding-left: 3%;
+}
+
+.table-payout {
+  th, td {
+    flex: 1;
+    margin: 16px 0;
+  }
+
+  td {
+    font-size: 13px;
+  }
+}
