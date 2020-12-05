@@ -15,15 +15,12 @@ $(document).ready( function () {
     'language': {
       'url': '//cdn.datatables.net/plug-ins/1.10.21/i18n/Polish.json'
     },
-    'columnDefs': [{
-      'width': '23%',
-    }]
   });
 });
 
 
-var table = $('#table-payout').DataTable();
-$('#table-payout').css('display', 'table');
+// var table = $('#table-payout').DataTable();
+// $('#table-payout').css('display', 'table');
 // table.responsive.recalc();
 
 // $('#table-payout').DataTable()

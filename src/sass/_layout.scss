@@ -144,13 +144,13 @@ input:focus {
   background-color: $grey-color;
 }
 
-input:valid {
-  outline-color: $access-color;
-}
+// input:valid {
+//   outline-color: $access-color;
+// }
 
-input:invalid {
-  outline-color: $alert-color;
-}
+// input:invalid {
+//   outline-color: $alert-color;
+// }
 
 // aktywacja podstron w init-project.js
 #pages > * {
