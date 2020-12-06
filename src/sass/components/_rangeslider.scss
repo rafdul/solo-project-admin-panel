@@ -1,3 +1,11 @@
 .irs {
   margin: 0 10px;
 }
+
+span.irs-handle.single {
+  cursor: pointer;
+}
+
+.irs--square .irs-handle:hover {
+  background-color: $very-dark-color;
+}

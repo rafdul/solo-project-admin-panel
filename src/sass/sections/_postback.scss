@@ -60,6 +60,9 @@
 }
 
 .send-status {
+  overflow-y: scroll;
+  height: 150px;
+
   ul {
     text-align: left;
     list-style-type: none;
