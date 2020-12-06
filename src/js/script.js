@@ -26,3 +26,15 @@ $(document).ready( function () {
 // $('#table-payout').DataTable()
 //   .columns.adjust()
 //   .responsive.recalc();
+
+// rangeslider
+$('.js-range-slider').ionRangeSlider({
+  // type: 'double',
+  skin: 'square',
+  min: 0,
+  max: 168,
+  from: 0,
+  to: 168,
+  postfix: ' h',
+  // grid: true
+});
