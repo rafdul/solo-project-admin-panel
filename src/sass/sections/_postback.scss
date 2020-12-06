@@ -1,5 +1,5 @@
 .box-wrapper {
-  padding: 10px;
+  padding: 0px 10px;
 
   p {
     text-align: left;
@@ -18,7 +18,7 @@
 
   div {
     flex: 1;
-    padding-bottom: 5px;
+    padding-bottom: 10px;
 
     h3 {
       text-align: left;
@@ -37,4 +37,42 @@
       padding: 10px;
     }
   }
+}
+
+.send-wrapper {
+  display: flex;
+  justify-content: space-araund;
+
+  h3 {
+    text-align: left;
+    padding: 0 3px;
+  }
+
+  div:nth-child(1) {
+    border-right: 1px solid $grey-color;
+  }
+
+  div {
+    // border-top: 1px solid $more-grey-color;
+    // border-bottom: 1px solid $more-grey-color;
+    flex: 1;
+  }
+}
+
+.send-status {
+  ul {
+    text-align: left;
+    list-style-type: none;
+  }
+
+  label {
+    font-size: 13px;
+    font-weight: 400;
+  }
+}
+
+.postback-btn {
+  text-align: right;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
