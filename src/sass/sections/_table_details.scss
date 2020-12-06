@@ -1,0 +1,31 @@
+@media (max-width: 900px){
+  .scroll-wrapper {
+    overflow: scroll;
+    // display: block;
+    // min-width: 900px;
+
+    // table {
+    //   width: 100%;
+    //   max-width: 100%;
+    // }
+  }
+}
+
+.table-details {
+  font-size: 11px;
+}
+
+.table-details {
+  th, td {
+    flex: 1;
+    margin: 16px 0;
+  }
+
+  tr {
+    display: table-row;
+  }
+
+  td {
+    font-size: 13px;
+  }
+}

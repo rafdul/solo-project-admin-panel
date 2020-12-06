@@ -18,6 +18,19 @@ $(document).ready( function () {
   });
 });
 
+$(document).ready( function () {
+  $('#table-details').DataTable({
+    scrollX: true,
+    // paging:  false,
+    // keys:    true,
+    language: {
+      'url': '//cdn.datatables.net/plug-ins/1.10.21/i18n/Polish.json'
+    }
+  });
+});
+
+
+
 
 // var table = $('#table-payout').DataTable();
 // $('#table-payout').css('display', 'table');

@@ -412,10 +412,248 @@
       </div>
       <div id="details" class="content">
         <div class="container">
-          <h2>Details</h2>
+          <h2>Detail statistic</h2>
           <hr>
-          <section>
-            <p>Strona w trakcie budowy</p>
+          <section class="date-filter">
+            <div class="date-filter-wrapper">
+              <input type="text" name="dates" value="11/01/2020 - 11/15/2020">
+              <img src="images/icons/calendar.svg" alt="date" title="calendar" class="date-filter-img" width="15" height="15">
+              <button class="btn btn-data-filter">
+                <img src="images/icons/refresh.svg" alt="refresh" title="refreshing"  width="15" height="15">
+              </button>
+            </div>
+          </section>
+          <hr>
+          <section class="tabble-wrapper">
+            <div class="scroll-wrapper">
+              <table id="table-details" class="table-main table-details">
+                <thead>
+                  <tr>
+                    <th>Tracker</th>
+                    <th>Initiated date</th>
+                    <th>Visits</th>
+                    <th>Unique</th>
+                    <th>Signups</th>
+                    <th>FTD</th>
+                    <th>Depositors</th>
+                    <th>Deposits</th>
+                    <th>Payout ($)</th>
+                    <th>Turnover</th>
+                    <th>Deal</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>axx/sam_test</td>
+                    <td>17/07/20</td>
+                    <td>234</td>
+                    <td>111</td>
+                    <td>12</td>
+                    <td>6</td>
+                    <td>3</td>
+                    <td>34,425</td>
+                    <td>234</td>
+                    <td>421,342</td>
+                    <td>cpl(200)</td>
+                  </tr>
+                  <tr>
+                    <td>axx/leo_test</td>
+                    <td>17/08/20</td>
+                    <td>168</td>
+                    <td>222</td>
+                    <td>43</td>
+                    <td>2</td>
+                    <td>12</td>
+                    <td>24,425</td>
+                    <td>134</td>
+                    <td>321,342</td>
+                    <td>cpl(200)</td>
+                  </tr>
+                  <tr>
+                    <td>axx/feo_test</td>
+                    <td>27/08/20</td>
+                    <td>358</td>
+                    <td>542</td>
+                    <td>13</td>
+                    <td>5</td>
+                    <td>16</td>
+                    <td>54,425</td>
+                    <td>514</td>
+                    <td>121,342</td>
+                    <td>cpl(200)</td>
+                  </tr>
+                  <tr>
+                    <td>axx/ceo_test</td>
+                    <td>11/09/20</td>
+                    <td>318</td>
+                    <td>231</td>
+                    <td>10</td>
+                    <td>9</td>
+                    <td>19</td>
+                    <td>11,425</td>
+                    <td>164</td>
+                    <td>721,342</td>
+                    <td>cpl(200)</td>
+                  </tr>
+                  <tr>
+                    <td>axx/sam_test</td>
+                    <td>17/07/20</td>
+                    <td>234</td>
+                    <td>111</td>
+                    <td>12</td>
+                    <td>6</td>
+                    <td>3</td>
+                    <td>34,425</td>
+                    <td>234</td>
+                    <td>421,342</td>
+                    <td>cpl(200)</td>
+                  </tr>
+                  <tr>
+                    <td>axx/leo_test</td>
+                    <td>17/08/20</td>
+                    <td>168</td>
+                    <td>222</td>
+                    <td>43</td>
+                    <td>2</td>
+                    <td>12</td>
+                    <td>24,425</td>
+                    <td>134</td>
+                    <td>321,342</td>
+                    <td>cpl(200)</td>
+                  </tr>
+                  <tr>
+                    <td>axx/feo_test</td>
+                    <td>27/08/20</td>
+                    <td>358</td>
+                    <td>542</td>
+                    <td>13</td>
+                    <td>5</td>
+                    <td>16</td>
+                    <td>54,425</td>
+                    <td>514</td>
+                    <td>121,342</td>
+                    <td>cpl(200)</td>
+                  </tr>
+                  <tr>
+                    <td>axx/ceo_test</td>
+                    <td>11/09/20</td>
+                    <td>318</td>
+                    <td>231</td>
+                    <td>10</td>
+                    <td>9</td>
+                    <td>19</td>
+                    <td>11,425</td>
+                    <td>164</td>
+                    <td>721,342</td>
+                    <td>cpl(200)</td>
+                  </tr>
+                  <tr>
+                    <td>axx/sam_test</td>
+                    <td>17/07/20</td>
+                    <td>234</td>
+                    <td>111</td>
+                    <td>12</td>
+                    <td>6</td>
+                    <td>3</td>
+                    <td>34,425</td>
+                    <td>234</td>
+                    <td>421,342</td>
+                    <td>cpl(200)</td>
+                  </tr>
+                  <tr>
+                    <td>axx/leo_test</td>
+                    <td>17/08/20</td>
+                    <td>168</td>
+                    <td>222</td>
+                    <td>43</td>
+                    <td>2</td>
+                    <td>12</td>
+                    <td>24,425</td>
+                    <td>134</td>
+                    <td>321,342</td>
+                    <td>cpl(200)</td>
+                  </tr>
+                  <tr>
+                    <td>axx/feo_test</td>
+                    <td>27/08/20</td>
+                    <td>358</td>
+                    <td>542</td>
+                    <td>13</td>
+                    <td>5</td>
+                    <td>16</td>
+                    <td>54,425</td>
+                    <td>514</td>
+                    <td>121,342</td>
+                    <td>cpl(200)</td>
+                  </tr>
+                  <tr>
+                    <td>axx/ceo_test</td>
+                    <td>11/09/20</td>
+                    <td>318</td>
+                    <td>231</td>
+                    <td>10</td>
+                    <td>9</td>
+                    <td>19</td>
+                    <td>11,425</td>
+                    <td>164</td>
+                    <td>721,342</td>
+                    <td>cpl(200)</td>
+                  </tr>
+                  <tr>
+                    <td>axx/sam_test</td>
+                    <td>17/07/20</td>
+                    <td>234</td>
+                    <td>111</td>
+                    <td>12</td>
+                    <td>6</td>
+                    <td>3</td>
+                    <td>34,425</td>
+                    <td>234</td>
+                    <td>421,342</td>
+                    <td>cpl(200)</td>
+                  </tr>
+                  <tr>
+                    <td>axx/leo_test</td>
+                    <td>17/08/20</td>
+                    <td>168</td>
+                    <td>222</td>
+                    <td>43</td>
+                    <td>2</td>
+                    <td>12</td>
+                    <td>24,425</td>
+                    <td>134</td>
+                    <td>321,342</td>
+                    <td>cpl(200)</td>
+                  </tr>
+                  <tr>
+                    <td>axx/feo_test</td>
+                    <td>27/08/20</td>
+                    <td>358</td>
+                    <td>542</td>
+                    <td>13</td>
+                    <td>5</td>
+                    <td>16</td>
+                    <td>54,425</td>
+                    <td>514</td>
+                    <td>121,342</td>
+                    <td>cpl(200)</td>
+                  </tr>
+                  <tr>
+                    <td>axx/ceo_test</td>
+                    <td>11/09/20</td>
+                    <td>318</td>
+                    <td>231</td>
+                    <td>10</td>
+                    <td>9</td>
+                    <td>19</td>
+                    <td>11,425</td>
+                    <td>164</td>
+                    <td>721,342</td>
+                    <td>cpl(200)</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </section>
         </div>
       </div>
@@ -1053,8 +1291,8 @@
   <script src="vendor/moment.min.js"></script>
   <script src="vendor/daterangepicker.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
-  <script src="/path/to/cdn/jquery.min.js"></script>
-  <script src="/path/to/jquery-slider-min.js"></script>
+  <!-- <script src="/path/to/cdn/jquery.min.js"></script>
+  <script src="/path/to/jquery-slider-min.js"></script> -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
   <script src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
   <script src="js/script.js" type="module"></script>
