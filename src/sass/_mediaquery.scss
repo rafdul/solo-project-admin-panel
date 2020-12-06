@@ -26,18 +26,6 @@
     }
   }
 
-  // wersja short side-menu
-  // .min-grid {
-  //   .side-menu__top-menu {
-  //     // visibility: visible;
-  //     display: block;
-
-  //     &--wallet img:nth-child(2) {
-  //       display: none;
-  //     }
-  //   }
-  // }
-
   // tabelka w General statistic
   .table-flex {
     display: block;
@@ -85,3 +73,12 @@
     padding-right: 8%;
   }
 }
+
+@media (max-width: 450px) {
+  .table-main {
+    .url a {
+      font-size: 12px;
+    }
+  }
+}
+
