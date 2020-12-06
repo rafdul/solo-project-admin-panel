@@ -633,10 +633,74 @@
       </div>
       <div id="postback" class="content">
         <div class="container">
-          <h2>Postback</h2>
+          <h2>New postback</h2>
           <hr>
-          <section>
-            <p>Strona w trakcie budowy</p>
+          <section class="box-wrapper">
+            <p>You can insert some parameters in this postback:</p>
+            <div class="messages-wrapper">
+              <div>
+                <h3>Signup</h3>
+                <input type="text" name="signup">
+              </div>
+              <div>
+                <h3>Deposit</h3>
+                <input type="text" name="deposit">
+              </div>
+            </div>
+          </section>
+          <section class="box-wrapper messages-wrapper">
+            <div>
+              <h3>Postback type</h3>
+              <select name="postback-type">
+                <option value="" disabled selected>Select</option>
+                <option value="s2s">S2S</option>
+                <option value="r3r">R3R</option>
+                <option value="t4t">T4T</option>
+                <option value="a1a">A1A</option>
+                <option value="c9c">C9C</option>
+              </select>
+            </div>
+            <div>
+              <h3>To countries</h3>
+              <select name="countries">
+                <option value="" disabled selected>Select countries</option>
+                <option value="benin">Benin</option>
+                <option value="belize">Belize</option>
+                <option value="burundi">Burundi</option>
+                <option value="gibraltar">Gibraltar</option>
+                <option value="jamajka">Jamajka</option>
+                <option value="komory">Komory</option>
+                <option value="luksembourg">Luksembourg</option>
+                <option value="nikaragua">Nikaragua</option>
+                <option value="rwanda">Rwanda</option>
+                <option value="samoa">Samoa</option>
+                <option value="zimbabwe">Zimbabwe</option>
+              </select>
+            </div>
+            <div>
+              <h3>Sending options</h3>
+              <select name="sending-option">
+                <option value="" disabled selected>Select</option>
+                <option value="post">Post</option>
+                <option value="email">Email</option>
+                <option value="dhl">DHL</option>
+                <option value="ups">UPS</option>
+                <option value="dpd">DPD</option>
+              </select>
+            </div>
+          </section>
+          <hr>
+          <section class="box-wrapper">
+            <div>
+              <h3>NOT send statuses</h3>
+            </div>
+            <div>
+              <h3>Send after</h3>
+            </div>
+          </section>
+          <hr>
+          <section class="form--btn">
+            <button type="submit" class="btn btn-form">Create pixel</button>
           </section>
         </div>
       </div>
