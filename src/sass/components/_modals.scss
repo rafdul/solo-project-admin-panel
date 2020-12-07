@@ -158,8 +158,12 @@
         flex: 2;
       }
 
-      img {
+      .icons {
         flex: 1;
+      }
+
+      img {
+        // flex: 1;
         display: none;
         filter: invert(50%);
         cursor: pointer;
