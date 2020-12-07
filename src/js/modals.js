@@ -37,7 +37,7 @@ function openModal(modal) {
 }
 
 // wywowałenie modala po kliknięcie w przycisk QUIT
-document.querySelector('.top-menu__exit').addEventListener ('click', function(event) {
+document.querySelector('.top-menu__exit').addEventListener('click', function(event) {
   event.preventDefault;
   openModal('#quit-modal');
 });
@@ -52,3 +52,16 @@ document.querySelector('.top-menu__profile').addEventListener ('click', function
   event.preventDefault;
   openModal('#login-modal');
 });
+
+// wywołanie po kliknięciu w przycisk +add url
+const buttonLinks = document.querySelectorAll('a.btn-links');
+
+buttonLinks.addEventListener('click', function(event) {
+  event.preventDefault;
+  openModal('#link-modal');
+});
+
+// document.querySelector('a.btn-links').addEventListener('click', function(event) {
+//   event.preventDefault;
+//   openModal('#link-modal');
+// });
