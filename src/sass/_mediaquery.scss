@@ -72,6 +72,21 @@
     padding-left: 8%;
     padding-right: 8%;
   }
+
+  #link-modal {
+    .wrapper {
+      flex-direction: column;
+    }
+
+    .link-buttons {
+      flex-direction: column;
+
+      div {
+        display: flex;
+        justify-content: center;
+      }
+    }
+  }
 }
 
 @media (max-width: 450px) {
