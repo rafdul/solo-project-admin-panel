@@ -54,14 +54,14 @@ document.querySelector('.top-menu__profile').addEventListener ('click', function
 });
 
 // wywołanie po kliknięciu w przycisk +add url
-const buttonLinks = document.querySelectorAll('a.btn-links');
+const buttonLinks = document.querySelectorAll('.btn-links');
+// console.log(buttonLinks);
+// console.log(document.querySelectorAll('.wrapper-btn-list'));
 
-buttonLinks.addEventListener('click', function(event) {
-  event.preventDefault;
-  openModal('#link-modal');
-});
-
-// document.querySelector('a.btn-links').addEventListener('click', function(event) {
-//   event.preventDefault;
-//   openModal('#link-modal');
-// });
+for(let button of buttonLinks){
+  button.addEventListener('click', function(event) {
+    console.log(this);
+    event.preventDefault;
+    openModal('#link-modal');
+  });
+}
