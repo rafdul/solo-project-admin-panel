@@ -30,7 +30,7 @@ document.addEventListener('keyup', function(e) {
 function openModal(modal) {
   document.querySelectorAll('#overlay > *').forEach(function(modal) {
     modal.classList.remove('show');
-    console.log('modal', modal);
+    // console.log('modal', modal);
   });
   document.querySelector('#overlay').classList.add('show');
   document.querySelector(modal).classList.add('show');

@@ -82,3 +82,39 @@
   }
 }
 
+
+@media (max-width: 940px){
+  .dataTables_scroll {
+    width: 65vw;
+  }
+}
+
+@media (max-width: 800px){
+  .dataTables_scroll {
+    width: 60vw;
+  }
+}
+
+@media (max-width: 750px){
+  .dataTables_scroll {
+    width: 70vw;
+  }
+}
+
+@media (max-width: 460px){
+  .dataTables_scroll {
+    width: 65vw;
+  }
+}
+
+@media (max-width: 400px){
+  .dataTables_scroll {
+    width: 60vw;
+  }
+}
+
+@media (max-width: 350px){
+  .dataTables_scroll {
+    width: 50vw;
+  }
+}

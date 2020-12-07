@@ -145,10 +145,36 @@
     div {
       flex: 30%;
       padding: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      input {
+        flex: 1;
+      }
+
+      label {
+        flex: 2;
+      }
+
+      img {
+        flex: 1;
+        display: none;
+        filter: invert(50%);
+        cursor: pointer;
+      }
 
       &:hover {
         background-color: $grey-color;
         cursor: pointer;
+
+        img {
+          display: flex;
+        }
+
+        img:hover {
+          filter: invert(0);
+        }
       }
     }
   }
