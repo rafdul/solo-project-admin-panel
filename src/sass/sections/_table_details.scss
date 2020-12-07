@@ -1,16 +1,3 @@
-@media (max-width: 900px){
-  .scroll-wrapper {
-    overflow: scroll;
-    // display: block;
-    // min-width: 900px;
-
-    // table {
-    //   width: 100%;
-    //   max-width: 100%;
-    // }
-  }
-}
-
 .table-details {
   font-size: 11px;
 }
@@ -27,5 +14,73 @@
 
   td {
     font-size: 13px;
+  }
+}
+
+.dataTables {
+  &_scroll {
+    margin: auto;
+    // overflow-x: scroll;
+    width: 70vw;
+  }
+
+  &_length {
+    padding: 0 15px;
+  }
+
+  &_filter {
+    padding: 0 15px;
+  }
+
+  &_info {
+    padding: 0 15px;
+  }
+
+  &_paginate {
+    padding: 0 15px;
+  }
+
+  &_wrapper.no-footer .dataTables_scrollBody {
+    border-bottom-width: 0;
+  }
+}
+
+// .dataTables_wrapper.no-footer .dataTables_scrollBody {
+//   border-bottom-width: 0;
+// }
+
+@media (max-width: 940px){
+  .dataTables_scroll {
+    width: 65vw;
+  }
+}
+
+@media (max-width: 800px){
+  .dataTables_scroll {
+    width: 60vw;
+  }
+}
+
+@media (max-width: 750px){
+  .dataTables_scroll {
+    width: 70vw;
+  }
+}
+
+@media (max-width: 460px){
+  .dataTables_scroll {
+    width: 65vw;
+  }
+}
+
+@media (max-width: 400px){
+  .dataTables_scroll {
+    width: 60vw;
+  }
+}
+
+@media (max-width: 350px){
+  .dataTables_scroll {
+    width: 50vw;
   }
 }

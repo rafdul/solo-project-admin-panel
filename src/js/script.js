@@ -21,8 +21,9 @@ $(document).ready( function () {
 $(document).ready( function () {
   $('#table-details').DataTable({
     scrollX: true,
+    // scrollY: 350,
+    // responsive: true,
     // paging:  false,
-    // keys:    true,
     language: {
       'url': '//cdn.datatables.net/plug-ins/1.10.21/i18n/Polish.json'
     }
