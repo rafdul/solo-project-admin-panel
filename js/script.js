@@ -10,25 +10,25 @@ $(function() {
 });
 
 // datatables - stronicowanie i sortowanie tabeli
-$(document).ready( function () {
-  $('#table-payout').DataTable({
-    'language': {
-      'url': '//cdn.datatables.net/plug-ins/1.10.21/i18n/Polish.json'
-    },
-  });
-});
+// $(document).ready( function () {
+//   $('#table-payout').DataTable({
+//     language: {
+//       url: '//cdn.datatables.net/plug-ins/1.10.21/i18n/Polish.json'
+//     },
+//   });
+// });
 
-$(document).ready( function () {
-  $('#table-details').DataTable({
-    scrollX: true,
-    // scrollY: 350,
-    // responsive: true,
-    // paging:  false,
-    language: {
-      'url': '//cdn.datatables.net/plug-ins/1.10.21/i18n/Polish.json'
-    }
-  });
-});
+// $(document).ready( function () {
+//   $('#table-details').DataTable({
+//     scrollX: true,
+//     // scrollY: 350,
+//     // responsive: true,
+//     // paging:  false,
+//     language: {
+//       'url': '//cdn.datatables.net/plug-ins/1.10.21/i18n/Polish.json'
+//     }
+//   });
+// });
 
 
 
@@ -52,3 +52,5 @@ $('.js-range-slider').ionRangeSlider({
   postfix: ' h',
   // grid: true
 });
+
+

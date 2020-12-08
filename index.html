@@ -8,7 +8,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css">
-  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.min.css">
+  <!-- <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.min.css"> -->
+  <!-- <link rel="stylesheet" type="text/css" href=https://cdn.datatables.net/responsive/2.2.6/css/responsive.dataTables.min.css> -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css"/>
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -956,31 +957,25 @@
           <h2>Personal data</h2>
           <hr>
           <section class="form--data">
-            <div>
-              <div class="field">
-                <label>Name</label>
-                <input type="text" name="user-name">
-              </div>
+            <div class="field">
+              <label>Name</label>
+              <input type="text" name="user-name">
               <p class="error"></p>
             </div>
             <div class="field">
               <label>Surname</label>
               <input type="text" name="user-surname">
             </div>
-            <div>
-              <div class="field">
-                <label>E-mail</label>
-                <!-- <input type="email" name="user-email" placeholder="np.jan@kowalski.pl"> -->
-                <input type="email" name="user-email" placeholder="np.jan@kowalski.pl" pattern="[a-zA-Z_0-9-.]{3,}@[a-zA-Z0-9-]{2,}[.]{1}[a-zA-Z]{2,}" required>
-              </div>
+            <div class="field">
+              <label>E-mail</label>
+              <!-- <input type="email" name="user-email" placeholder="np.jan@kowalski.pl"> -->
+              <input type="email" name="user-email" placeholder="np.jan@kowalski.pl" pattern="[a-zA-Z_0-9-.]{3,}@[a-zA-Z0-9-]{2,}[.]{1}[a-zA-Z]{2,}" required>
               <p class="error"></p>
             </div>
-            <div>
-              <div class="field">
-                <label>Phone number</label>
-                <input type="tel" name="user-phone" placeholder="np.600-123-456">
-                <!-- <input type="tel" name="user-phone" minlength="9" placeholder="np.600-123-456" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" maxlength="14"> -->
-              </div>
+            <div class="field">
+              <label>Phone number</label>
+              <input type="tel" name="user-phone" placeholder="np.600-123-456">
+              <!-- <input type="tel" name="user-phone" minlength="9" placeholder="np.600-123-456" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" maxlength="14"> -->
               <p class="error"></p>
             </div>
           </section>
@@ -1008,18 +1003,14 @@
           </section>
           <hr>
           <section class="form--password">
-            <div>
-              <div class="field">
-                <label>Password</label>
-                <input type="password" name="user-password" placeholder="Min. 5 znaków">
-              </div>
+            <div class="field">
+              <label>Password</label>
+              <input type="password" name="user-password" placeholder="Min. 5 znaków">
               <p class="error"></p>
             </div>
-            <div>
-              <div class="field">
-                <label>Repeat</label>
-                <input type="password" name="user-repeat" placeholder="Powtórz hasło">
-              </div>
+            <div class="field">
+              <label>Repeat</label>
+              <input type="password" name="user-repeat" placeholder="Powtórz hasło">
               <p class="error"></p>
             </div>
           </section>
@@ -1491,7 +1482,8 @@
   <!-- <script src="/path/to/cdn/jquery.min.js"></script>
   <script src="/path/to/jquery-slider-min.js"></script> -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
-  <script src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
+  <!-- <script src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
+  <script src="https://cdn.datatables.net/responsive/2.2.6/js/dataTables.responsive.min.js"></script> -->
   <script src="js/script.js" type="module"></script>
   <script src="js/chart.js" type="module"></script>
   <script src="js/side-menu-hide-show.js" type="module"></script>

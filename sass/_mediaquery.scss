@@ -17,6 +17,10 @@
     margin-top: 10px;
   }
 
+  form .form--agreement {
+    padding: 36px 20%;
+  }
+
   .side-menu__top-menu {
     // visibility: visible;
     display: block;
@@ -60,19 +64,6 @@
 }
 
 @media (max-width: 570px) {
-  .field {
-    flex-direction: column;
-
-    input {
-      min-height: 35px;
-    }
-  }
-
-  .form--agreement {
-    padding-left: 8%;
-    padding-right: 8%;
-  }
-
   #link-modal {
     .wrapper {
       flex-direction: column;
@@ -87,6 +78,10 @@
       }
     }
   }
+
+  form .form--agreement {
+    padding: 36px 5px;
+  }
 }
 
 @media (max-width: 450px) {
@@ -94,6 +89,24 @@
     .url a {
       font-size: 12px;
     }
+  }
+
+  .field {
+    flex-direction: column;
+
+    input {
+      min-height: 35px;
+    }
+  }
+}
+
+@media (max-width: 360px) {
+  form {
+    section {
+      padding: 36px 0;
+    }
+
+
   }
 }
 

@@ -25,6 +25,7 @@
 
 .content {
   grid-area: main;
+  // height: 100vh;
 }
 
 // style
@@ -40,7 +41,7 @@ body {
 
 .container, form {
   // max-width: 1056px;
-  // height: 500px;
+  height: 100vh;
   margin: 17px 20px;
   // padding: 0 0 37px 0;
   background-color: $white-color;

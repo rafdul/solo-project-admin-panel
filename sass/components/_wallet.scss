@@ -3,7 +3,7 @@
 .dropdown__wallet {
   position: absolute;
   // height: 138px;
-  width: 18%;
+  // width: 18%;
   content: '';
   background-color: $grey-color;
   border: 1px solid $border-color;
@@ -21,12 +21,12 @@
     justify-content: space-around;
     align-items: center;
     // align-content: center;
-    text-align: center;
+    // text-align: center;
     // color: $very-dark-color;
 
     img:nth-child(1) {
       filter: invert(0%);
-      padding: 1px;
+      // padding: 1px;
       display: inline;
     }
 
@@ -44,12 +44,13 @@
     ul {
       list-style-type: none;
       line-height: 1;
-      margin: auto auto;
+      margin: auto;
+      padding: 0;
 
       li {
         display: flex;
         justify-content: space-between;
-        margin: 0 20px 0 -20px;
+        // margin: 0 20px 0 -20px;
       }
 
       p {
