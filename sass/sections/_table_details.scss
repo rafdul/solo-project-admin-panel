@@ -1,48 +1,35 @@
-.table-details {
-  font-size: 11px;
-}
+.scroll-wrapper {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
 
-.table-details {
-  th, td {
-    flex: 1;
-    margin: 16px 0;
-  }
-
-  tr {
-    display: table-row;
-  }
-
-  td {
+  .table-details {
     font-size: 13px;
+    width: 100%;
+    max-width: 100%;
+    border-collapse: collapse;
+
+    thead, tbody {
+      margin: 0;
+      padding: 0;
+    }
+
+    th, td {
+      // flex: 1;
+      padding: 15px;
+      padding: 17px;
+      text-align: left;
+      white-space: nowrap;
+    }
+
+    tr {
+      // display: table-row;
+      border-bottom: 1px solid $border-color;
+    }
+
+    td {
+      font-size: 13px;
+      color: $very-dark-color;
+    }
   }
 }
-
-.dataTables {
-  &_scroll {
-    margin: auto;
-    // overflow-x: scroll;
-    width: 70vw;
-  }
-
-  &_length {
-    padding: 0 15px;
-  }
-
-  &_filter {
-    padding: 0 15px;
-  }
-
-  &_info {
-    padding: 0 15px;
-  }
-
-  &_paginate {
-    padding: 0 15px;
-  }
-
-  &_wrapper.no-footer .dataTables_scrollBody {
-    border-bottom-width: 0;
-  }
-}
-
-// kilka warunków @media w pliku mediaquery.scss
