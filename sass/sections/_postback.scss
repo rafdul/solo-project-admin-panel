@@ -14,7 +14,6 @@
 
 .messages-wrapper {
   display: flex;
-  justify-content: space-araund;
 
   div {
     flex: 1;
@@ -41,7 +40,7 @@
 
 .send-wrapper {
   display: flex;
-  justify-content: space-araund;
+  // justify-content: space-around;
 
   h3 {
     text-align: left;
