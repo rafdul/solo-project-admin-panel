@@ -1,0 +1,30 @@
+.pagination {
+  padding: 15px;
+  text-align: center;
+  font-size: 17px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    margin: 0 10px;
+    filter: invert(50%);
+    cursor: pointer;
+
+    &:hover {
+      filter: invert(0);
+    }
+  }
+
+  span a {
+    padding: 10px 15px;
+    text-decoration: none;
+    cursor: pointer;
+
+    &:hover {
+      color: $more-grey-color;
+      background-color: $grey-color;
+      border-radius: 5%;
+    }
+  }
+}

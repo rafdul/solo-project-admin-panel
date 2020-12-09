@@ -27,9 +27,37 @@
       border-bottom: 1px solid $border-color;
     }
 
-    td {
+    tbody tr {
       font-size: 13px;
       color: $very-dark-color;
+
+      &:hover {
+        background-color: $grey-color;
+        cursor: pointer;
+      }
+    }
+
+    thead tr th {
+      // padding: 3px 17px;
+
+      &:hover {
+        background-color: $grey-color;
+        cursor: pointer;
+        color: $very-dark-color;
+        border-radius: 5px;
+        margin: auto 0;
+        height: 60%;
+
+        img {
+          visibility: visible;
+          margin-left: 10px;
+          filter: invert(50%);
+        }
+      }
+
+      img {
+        visibility: hidden;
+      }
     }
   }
 }
