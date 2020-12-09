@@ -3,7 +3,7 @@
   width: 100%;
   overflow-x: auto;
 
-  .table-details {
+  .table-general {
     font-size: 13px;
     width: 100%;
     max-width: 100%;
@@ -41,18 +41,29 @@
       // padding: 3px 17px;
 
       &:hover {
-        background-color: $grey-color;
-        cursor: pointer;
-        color: $very-dark-color;
-        border-radius: 5px;
-        margin: auto 0;
-        height: 60%;
+        // background-color: $grey-color;
+        // cursor: pointer;
+        // color: $very-dark-color;
+        // border-radius: 5px;
+        // margin: auto 0;
 
         img {
           visibility: visible;
           margin-left: 10px;
           filter: invert(50%);
         }
+
+        p {
+          background-color: $grey-color;
+          cursor: pointer;
+          border-radius: 5%;
+          color: $very-dark-color;
+        }
+      }
+
+      p {
+        margin: 0;
+        padding: 5px;
       }
 
       img {
