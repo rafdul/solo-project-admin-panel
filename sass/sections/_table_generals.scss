@@ -48,8 +48,6 @@
         // margin: auto 0;
 
         img {
-          visibility: visible;
-          margin-left: 10px;
           filter: invert(50%);
         }
 
@@ -67,7 +65,8 @@
       }
 
       img {
-        visibility: hidden;
+        margin-left: 10px;
+        filter: invert(1);
       }
     }
   }
