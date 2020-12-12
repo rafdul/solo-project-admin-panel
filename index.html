@@ -23,48 +23,54 @@
           <i class="fas fa-bars hamburger"></i>
         </div>
         <ul class="side-menu__links list">
-          <li class="active">
+          <!-- <li class="active">
             <a href="#general" class="menu-link">
               <img src="images/icons/general.svg" alt="star" title="general" class="" width="16" height="15">
             </a>
               <p><a href="#general" class="menu-link">General</a></p>
-          </li>
-          <li>
-            <a href="#details" class="menu-link">
-              <img src="images/icons/details.svg" alt="menu" title="details" class="" width="14" height="13">
-            </a>
-              <p><a href="#details" class="menu-link">Details</a></p>
-          </li>
-          <li>
-            <a href="#links" class="menu-link">
+          </li> -->
+          <a href="#general" class="menu-link">
+            <li class="active">
+              <img src="images/icons/general.svg" alt="star" title="general" class="" width="16" height="15">
+              <p>General</p>
+            </li>
+          </a>
+          <a href="#details" class="menu-link">
+            <li>
+                <img src="images/icons/details.svg" alt="menu" title="details" class="" width="14" height="13">
+                <p>Details</p>
+            </li>
+          </a>
+          <a href="#links" class="menu-link">
+            <li>
               <img src="images/icons/links.svg" alt="chain" title="links" class="" width="16" height="8">
-            </a>
-            <p><a href="#links" class="menu-link">Links</a></p>
-          </li>
-          <li>
-            <a href="#banners" class="menu-link">
-              <img src="images/icons/banners.svg" alt="boxes" title="banners" class="" width="13" height="14">
-            </a>
-            <p><a href="#banners" class="menu-link">Banners</a></p>
-          </li>
-          <li>
-            <a href="#personal" class="menu-link">
+              <p>Links</p>
+            </li>
+          </a>
+          <a href="#banners" class="menu-link">
+            <li>
+                <img src="images/icons/banners.svg" alt="boxes" title="banners" class="" width="13" height="14">
+                <p>Banners</p>
+            </li>
+          </a>
+          <a href="#personal" class="menu-link">
+            <li>
               <img src="images/icons/personaldata.svg" alt="figure" title="personal_data" class="" width="9" height="13">
-            </a>
-            <p><a href="#personal" class="menu-link">Personal data</a></p>
-          </li>
-          <li>
-            <a href="#payout" class="menu-link">
+              <p>Personal data</p>
+            </li>
+          </a>
+          <a href="#payout" class="menu-link">
+            <li>
               <img src="images/icons/payout.svg" alt="payment" title="payout" class="" width="13" height="13">
-            </a>
-            <p><a href="#payout" class="menu-link">Payout</a></p>
-          </li>
-          <li>
-            <a href="#postback" class="menu-link">
+              <p>Payout</p>
+            </li>
+          </a>
+          <a href="#postback" class="menu-link">
+            <li>
               <img src="images/icons/postback.svg" alt="postback" title="postback" class="" width="13" height="14">
-            </a>
-            <p><a href="#postback" class="menu-link">Postback</a></p>
-          </li>
+              <p>Postback</p>
+            </li>
+          </a>
         </ul>
         <div class="side-menu__manager">
           <h2 class="subtitle">Your manager</h2>
@@ -1169,18 +1175,18 @@
           <section class="box-wrapper">
             <p>You can insert some parameters in this postback:</p>
             <div class="messages-wrapper">
-              <div>
+              <div class="input-group">
                 <h3>Signup</h3>
                 <input type="text" name="signup">
               </div>
-              <div>
+              <div class="input-group">
                 <h3>Deposit</h3>
                 <input type="text" name="deposit">
               </div>
             </div>
           </section>
           <section class="box-wrapper messages-wrapper">
-            <div>
+            <div class="input-group">
               <h3>Postback type</h3>
               <select name="postback-type">
                 <option value="" disabled selected>Select</option>
@@ -1191,7 +1197,7 @@
                 <option value="c9c">C9C</option>
               </select>
             </div>
-            <div>
+            <div class="input-group">
               <h3>To countries</h3>
               <select name="countries">
                 <option value="" disabled selected>Select countries</option>
@@ -1208,7 +1214,7 @@
                 <option value="zimbabwe">Zimbabwe</option>
               </select>
             </div>
-            <div>
+            <div class="input-group">
               <h3>Sending options</h3>
               <select name="sending-option">
                 <option value="" disabled selected>Select</option>
